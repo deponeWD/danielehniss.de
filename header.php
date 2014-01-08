@@ -14,11 +14,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-<title><?php wp_title(' &middot;', true, 'right'); ?> <?php bloginfo('name'); ?> &middot; <?php bloginfo('description'); ?></title>
+<title><?php wp_title(' &middot;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
 <meta name="author" content="Daniel Ehniss" />
 <meta name="keywords" content="Blog, Daniel Ehniss, Ehniss, Karlsruhe, Theologie, Soziologie, Dekonstruktion, Philosophie, Emergenz, Emergent, emerging Church, Web2.0, Web, Kubik, Gerechtigkeit, Nachhaltigkeit" />
-<?php if (is_single()) { ?>
+<?php if (has_excerpt()) { ?>
     <meta name="description" content="<?php echo get_the_excerpt(); ?>" />
 <?php } else { ?>
     <meta name="description" content="Hallo, ich bin Daniel Ehniss, ein Kaffeeliebhaber und Web Designer in Karlsruhe. Hier findest Du mein privates Blog." >
@@ -26,8 +26,8 @@
 
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" >
-<link rel="apple-touch-icon" href="./apple-touch-icon.png">
-<link rel="icon" href="./favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" >
 

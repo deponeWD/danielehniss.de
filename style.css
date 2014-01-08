@@ -201,8 +201,8 @@ h2 {
   font-size: 2em;
   text-align: center;
   text-shadow: 0 1px #fafafa;
-  text-transform: uppercase;
-  margin: 1em 0 .25em;
+  /*text-transform: uppercase;*/
+  margin: 1em 0 .4em;
   padding: 0; }
 
 h2 a {
@@ -252,7 +252,7 @@ h3.start {
 
 h3.archive a, h3.start a {
   text-decoration: none;
-  text-transform: uppercase; }
+  /*text-transform: uppercase;*/ }
 
 a,
 a:visited {
@@ -357,9 +357,14 @@ a img {
 
 .entry {
   font-size: 1.125em;
-  line-height: 1.4em; }
+  line-height: 145%; }
   .entry p {
-    margin: .75em 0; }
+    margin: .75em 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto; }
     .entry p:first-child {
       margin: .25em 0 .75em; }
 
