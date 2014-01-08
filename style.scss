@@ -55,14 +55,10 @@ $green: rgb(0,153,0);
 @include declare-font-face('noticia-text', 'Noticia Text Bold Italic', 'noticiatext-bolditalic');
 @include declare-font-face('noticia-text', 'Noticia Text Italic', 'noticiatext-italic');
 @include declare-font-face('noticia-text', 'Noticia Text Regular', 'noticiatext-regular');
-@include declare-font-face('source-sans-pro', 'Source Sans Pro Bold', 'SourceSansPro-Bold');
-@include declare-font-face('source-sans-pro', 'Source Sans Pro Bold Italic', 'SourceSansPro-BoldIt');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Italic', 'SourceSansPro-It');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Light', 'SourceSansPro-Light');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Light Italic', 'SourceSansPro-LightIt');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Regular', 'SourceSansPro-Regular');
-@include declare-font-face('source-sans-pro', 'Source Sans Pro Semibold', 'SourceSansPro-Semibold');
-@include declare-font-face('source-sans-pro', 'Source Sans Pro Semibold Italic', 'SourceSansPro-SemiboldIt');
 
 
 header, nav, section, article, aside, footer {
@@ -177,7 +173,7 @@ article:last-of-type,
 }
 
 h2 {
-    font-family: "Source Sans Pro Semibold", sans-serif;
+    font-family: "Source Sans Pro Regular", sans-serif;
     font-size: 2em;
     text-align: center;
     text-shadow: 0 1px $white;
@@ -205,7 +201,7 @@ h3 {
     /*background-color: $almostwhite;*/
     border-bottom: 1px solid $lightgrey;
     /*border-top: 1px solid $lightgrey;*/
-    font-family: "Source Sans Pro Semibold", sans-serif;
+    font-family: "Source Sans Pro Regular", sans-serif;
     font-size: 1.5em;
     clear: both;
     padding: .2em 0 .4em;
@@ -246,8 +242,7 @@ a,
 a:visited {
     color: $green;
     text-decoration: underline;
-    @include vendor-prefix(transition, background-color .3s linear);
-    @include vendor-prefix(transition, color .3s linear);
+    @include vendor-prefix(transition, all .3s linear);
     &:hover,
     &:focus {
         background-color: $lightgrey;
