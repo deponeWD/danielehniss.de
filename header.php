@@ -32,7 +32,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" >
 
     <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" ></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/html5.js" ></script>
     <![endif]-->
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> 

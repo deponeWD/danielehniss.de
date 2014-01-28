@@ -226,6 +226,17 @@ h3.archive a, h3.start a {
   text-decoration: none;
   /*text-transform: uppercase;*/ }
 
+h4 {
+  border-bottom: 1px solid #e6e6e6;
+  font-family: "Source Sans Pro Regular", sans-serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  clear: both;
+  padding: .2em 0 .4em;
+  margin: 1.5em 0 0;
+  text-align: center;
+  text-shadow: 0 1px #fafafa; }
+
 a,
 a:visited {
   color: #009900;
@@ -378,6 +389,12 @@ hr {
 
 blockquote {
   border-left: 3px solid #009900;
+  font-family: "Noticia Text Italic", serif;
+  padding: .5em 6%;
+  margin: .5em 0; }
+
+.disclaimer {
+  border-left: 3px solid #ffa200;
   font-family: "Noticia Text Italic", serif;
   padding: .5em 6%;
   margin: .5em 0; }

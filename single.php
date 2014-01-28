@@ -7,7 +7,7 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Link zu %s', ''), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+				<h2><?php the_title(); ?></h2>
 
 				<div class="entry">
 					<?php the_content(__('weiterlesen &rarr;', '')); ?>
