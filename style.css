@@ -196,8 +196,8 @@ h3 {
   font-family: "Source Sans Pro Regular", sans-serif;
   font-size: 1.5em;
   clear: both;
-  padding: .2em 0 .4em;
-  margin: 1.5em 0 0;
+  padding: 1.5em 0 .4em;
+  margin: .2em 0 0;
   text-align: center;
   text-shadow: 0 1px #fafafa;
   /*text-transform: uppercase;*/ }
@@ -208,8 +208,8 @@ h3.archive {
   border-top: 0px solid #e6e6e6;
   clear: both;
   /*font-size: 1.5em;*/
-  padding: .2em 0;
-  margin: 1em 0 .3em;
+  padding: 1em 0;
+  margin: .2em 0 .3em;
   text-align: left;
   text-shadow: 0 1px #fafafa; }
 
@@ -232,8 +232,8 @@ h4 {
   font-weight: normal;
   font-size: 1.25em;
   clear: both;
-  padding: .2em 0 .4em;
-  margin: 1.5em 0 0;
+  padding: 1.5em 0 .4em;
+  margin: .2em 0 0;
   text-align: center;
   text-shadow: 0 1px #fafafa; }
 
@@ -361,7 +361,8 @@ a img {
   max-width: 320px; }
 
 .entry em {
-  font-family: "Noticia Text Italic", serif; }
+  font-family: "Noticia Text Italic", serif;
+  font-style: normal; }
 
 .entry strong {
   font-family: "Noticia Text Bold", serif;
@@ -370,7 +371,8 @@ a img {
 .entry strong em,
 .entry blockquote strong {
   font-family: "Noticia Text Bold Italic", serif;
-  font-weight: normal; }
+  font-weight: normal;
+  font-style: normal; }
 
 .entry small {
   color: #828282;
@@ -392,12 +394,14 @@ hr {
 blockquote {
   border-left: 3px solid #009900;
   font-family: "Noticia Text Italic", serif;
+  font-style: normal;
   padding: .5em 6%;
   margin: .5em 0; }
 
 .disclaimer {
   border-left: 3px solid #ffa200;
   font-family: "Noticia Text Italic", serif;
+  font-style: normal;
   padding: .5em 6%;
   margin: .5em 0; }
 
@@ -529,8 +533,9 @@ form#commentform {
   width: 98%; }
 
 a.comment-reply-link {
+  font-family: 'Noticia Text Italic', serif;
   font-size: .875em;
-  font-style: italic;
+  font-style: normal;
   width: auto; }
 
 #respond label {
