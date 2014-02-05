@@ -364,11 +364,13 @@ a img {
   font-family: "Noticia Text Italic", serif; }
 
 .entry strong {
-  font-family: "Noticia Text Bold", serif; }
+  font-family: "Noticia Text Bold", serif;
+  font-weight: normal; }
 
 .entry strong em,
 .entry blockquote strong {
-  font-family: "Noticia Text Bold Italic", serif; }
+  font-family: "Noticia Text Bold Italic", serif;
+  font-weight: normal; }
 
 .entry small {
   color: #828282;
