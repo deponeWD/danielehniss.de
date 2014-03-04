@@ -16,7 +16,7 @@
 <?php wp_footer(); ?>
 
 <?php if (is_single()) { ?>
-        <script src="http://code.jquery.com/jquery-1.7.2.min.js" ></script>
+        <script src="http://danielehniss.de/wp-content/themes/daniel14/js/jquery-1.11.0.min.js" ></script>
         <script src="http://danielehniss.de/wp-content/themes/daniel14/js/jquery.oembed.min.js" ></script>
         
         <script>

@@ -401,7 +401,7 @@ a img {
 .entry small {
     color: $mediumgrey;
     font-family: "Noticia Text Light", serif;
-    font-size: calc-em(14,16);
+    font-size: calc-em(12,16);
     & a,
     & a:visited {
         color: lighten($green,5%);
