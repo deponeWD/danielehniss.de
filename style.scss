@@ -426,6 +426,15 @@ blockquote {
     font-style: normal;
     padding: .5em 6%;
     margin: .5em 0;
+    &.interview {
+        border-left: 3px solid $lightgrey;
+    }
+}
+
+p.question {
+    border-top: 3px solid $lightgrey;
+    margin-top: calc-em(16,16);
+    padding-top: calc-em(12,16);
 }
 
 .disclaimer {
