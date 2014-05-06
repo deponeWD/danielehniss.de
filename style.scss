@@ -449,6 +449,13 @@ blockquote p small {
     font-style: normal;
     }
 
+blockquote p.source {
+    line-height: 95%;
+    & small {
+    font-style: normal;
+    }
+}
+
 pre,
 code {
     font-family: "Source Code Pro Regular", monospace;

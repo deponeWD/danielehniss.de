@@ -22,56 +22,48 @@ Author URI: http://depone.net
   src: url("./fonts/noticia-text/EOT/noticiatext-bold.eot?#iefix") format("embedded-opentype"), url("./fonts/noticia-text/WOFF/OTF/noticiatext-bold.otf.woff") format("woff"), url("./fonts/noticia-text/WOFF/TTF/noticiatext-bold.ttf.woff") format("truetype"), url("./fonts/noticia-text/SVG/noticiatext-bold.svg#Noticia Text Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Noticia Text Bold Italic;
   src: url("./fonts/noticia-text/EOT/noticiatext-bolditalic.eot");
   src: url("./fonts/noticia-text/EOT/noticiatext-bolditalic.eot?#iefix") format("embedded-opentype"), url("./fonts/noticia-text/WOFF/OTF/noticiatext-bolditalic.otf.woff") format("woff"), url("./fonts/noticia-text/WOFF/TTF/noticiatext-bolditalic.ttf.woff") format("truetype"), url("./fonts/noticia-text/SVG/noticiatext-bolditalic.svg#Noticia Text Bold Italic") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Noticia Text Italic;
   src: url("./fonts/noticia-text/EOT/noticiatext-italic.eot");
   src: url("./fonts/noticia-text/EOT/noticiatext-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/noticia-text/WOFF/OTF/noticiatext-italic.otf.woff") format("woff"), url("./fonts/noticia-text/WOFF/TTF/noticiatext-italic.ttf.woff") format("truetype"), url("./fonts/noticia-text/SVG/noticiatext-italic.svg#Noticia Text Italic") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Noticia Text Regular;
   src: url("./fonts/noticia-text/EOT/noticiatext-regular.eot");
   src: url("./fonts/noticia-text/EOT/noticiatext-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/noticia-text/WOFF/OTF/noticiatext-regular.otf.woff") format("woff"), url("./fonts/noticia-text/WOFF/TTF/noticiatext-regular.ttf.woff") format("truetype"), url("./fonts/noticia-text/SVG/noticiatext-regular.svg#Noticia Text Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Source Sans Pro Italic;
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-It.eot");
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro/WOFF/OTF/SourceSansPro-It.otf.woff") format("woff"), url("./fonts/source-sans-pro/WOFF/TTF/SourceSansPro-It.ttf.woff") format("truetype"), url("./fonts/source-sans-pro/SVG/SourceSansPro-It.svg#Source Sans Pro Italic") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Source Sans Pro Light;
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-Light.eot");
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Light.otf.woff") format("woff"), url("./fonts/source-sans-pro/WOFF/TTF/SourceSansPro-Light.ttf.woff") format("truetype"), url("./fonts/source-sans-pro/SVG/SourceSansPro-Light.svg#Source Sans Pro Light") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Source Sans Pro Light Italic;
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-LightIt.eot");
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-LightIt.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro/WOFF/OTF/SourceSansPro-LightIt.otf.woff") format("woff"), url("./fonts/source-sans-pro/WOFF/TTF/SourceSansPro-LightIt.ttf.woff") format("truetype"), url("./fonts/source-sans-pro/SVG/SourceSansPro-LightIt.svg#Source Sans Pro Light Italic") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: Source Sans Pro Regular;
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-Regular.eot");
   src: url("./fonts/source-sans-pro/EOT/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff") format("woff"), url("./fonts/source-sans-pro/WOFF/TTF/SourceSansPro-Regular.ttf.woff") format("truetype"), url("./fonts/source-sans-pro/SVG/SourceSansPro-Regular.svg#Source Sans Pro Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 header, nav, section, article, aside, footer {
   display: block; }
 
@@ -414,6 +406,11 @@ p.question {
 
 blockquote p small {
   font-style: normal; }
+
+blockquote p.source {
+  line-height: 95%; }
+  blockquote p.source small {
+    font-style: normal; }
 
 pre,
 code {
