@@ -17,7 +17,11 @@
 <title><?php wp_title(' &middot;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
 <meta name="author" content="Daniel Ehniss" />
-<meta name="keywords" content="Blog, Daniel Ehniss, Ehniss, Karlsruhe, Theologie, Soziologie, Dekonstruktion, Philosophie, Emergenz, Emergent, emerging Church, Web2.0, Web, Kubik, Gerechtigkeit, Nachhaltigkeit" />
+<?php if (is_single()) { ?>
+  <meta name="keywords" content="<?php $post_tags = get_the_tags(); if ( $post_tags ) { foreach( $post_tags as $tag ) { echo $tag->name . ', '; } } ?> Daniel Ehniss, Ehniss, Karlsruhe, Theologie, Soziologie, Dekonstruktion, Philosophie, Emergenz, Emergent, emerging Church, Web2.0, Web, Kubik, Gerechtigkeit, Nachhaltigkeit" />
+  <?php } else { ?>
+    <meta name="keywords" content="Blog, Daniel Ehniss, Ehniss, Karlsruhe, Theologie, Soziologie, Dekonstruktion, Philosophie, Emergenz, Emergent, emerging Church, Web2.0, Web, Kubik, Gerechtigkeit, Nachhaltigkeit" />
+  <?php } ?>
 <?php if (has_excerpt()) { ?>
     <meta name="description" content="<?php echo get_the_excerpt(); ?>" />
 <?php } else { ?>
@@ -35,7 +39,7 @@
         <script src="<?php bloginfo('template_url'); ?>/js/html5.js" ></script>
     <![endif]-->
 
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?> 
+<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <?php wp_head(); ?>
 </head>
@@ -49,7 +53,7 @@
     <p class="description">
         <?php bloginfo('description'); ?>
     </p><!-- description -->
-        
+
 </header>
 
 <hr /><!-- Trennlinie -->
