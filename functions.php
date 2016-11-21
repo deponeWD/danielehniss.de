@@ -1,6 +1,6 @@
-<?php 
+<?php
 /**
-    * 2 Seitenleisten wird eingerichtet 
+    * 2 Seitenleisten wird eingerichtet
 */
     if ( function_exists('register_sidebar') ) {
 	register_sidebars(2, array(
@@ -8,22 +8,22 @@
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widgettitle"><span>',
 		'after_title' => '</span></h3>',
-	)); 
+	));
 	}
 /**
-    * Artikelbilder werden eingerichtet 
+    * Artikelbilder werden eingerichtet
 */
     if ( function_exists('add_theme_support') )
     add_theme_support('post-thumbnails');
 
 /**
-    * Exzerpt fuer Seiten einrichten 
+    * Exzerpt fuer Seiten einrichten
 */
 
     add_post_type_support( 'page', 'excerpt' );
 
 /**
-    * Exzerpt der Blogartikel einstellen 
+    * Exzerpt der Blogartikel einstellen
 */
 
     function blog_excerpt($more) {
@@ -32,7 +32,7 @@
     add_filter('excerpt_more', 'blog_excerpt');
 
 /**
-    * Die Kommentarausgabe einstellen 
+    * Die Kommentarausgabe einstellen
 */
 
 function ng13_comment( $comment, $args, $depth ) {
@@ -106,12 +106,12 @@ add_filter('comment_form_default_fields','my_fields');
 
 //Adding the Open Graph in the Language Attributes
     function add_opengraph_doctype( $output ) {
-        return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+        return $output . ' prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"';
     }
     add_filter('language_attributes', 'add_opengraph_doctype');
- 
+
     //Lets add Open Graph Meta Info
- 
+
     function insert_fb_in_head() {
         global $post;
         if ( !is_singular()) //if it is not a post or a page
@@ -133,4 +133,7 @@ add_filter('comment_form_default_fields','my_fields');
     ";
     }
     add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+// Install Post Formats
+add_theme_support( 'post-formats', array( 'quote' ) );
 ?>

@@ -8,9 +8,8 @@
 
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 				<h2><?php the_title(); ?></h2>
-
 				<div class="entry">
-					<?php the_content(__('weiterlesen &rarr;', '')); ?>
+					<?php get_template_part( 'display-content' ); ?>
 				</div><!-- entry -->
 				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?><?php printf(__(' in %s', ''), get_the_category_list(', ')); ?>. <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> </p>
 			</article><!-- post -->
