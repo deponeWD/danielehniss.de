@@ -136,4 +136,11 @@ add_filter('comment_form_default_fields','my_fields');
 
 // Install Post Formats
 add_theme_support( 'post-formats', array( 'quote' ) );
+// Add automatic-feed-links to the head
+global $wp_version;
+if ( version_compare( $wp_version, '3.0', '>=' ) ) :
+  add_theme_support( 'automatic-feed-links' );
+else :
+  automatic_feed_links();
+endif;
 ?>
