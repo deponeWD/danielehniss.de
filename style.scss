@@ -3,7 +3,7 @@ Theme Name: DE-Blog 2014
 Description: Das Theme für mein Blog.
 Version: 0.1
 Author: Daniel Ehniss
-Author URI: http://depone.net
+Author URI: https://depone.net
 
 */
 
@@ -34,8 +34,8 @@ $yellow: rgb(255,162,0);
   @return ($target-px / $context) * 1em;
 }
 
-/* 
-** Embedding the Fonts 
+/*
+** Embedding the Fonts
 ** (Mixin for bullet proof font declaration syntax)
 */
 
@@ -119,7 +119,7 @@ header h1 span {
 header .description {
     left: -9999px;
     position: absolute;
-    top: -9999px;   
+    top: -9999px;
 }
 
 nav#mainnav {
@@ -221,7 +221,7 @@ h3.archive {
     padding: 1em 0;
     margin: .2em 0 .3em;
     text-align: left;
-    text-shadow: 0 1px $white;    
+    text-shadow: 0 1px $white;
 }
 
 h3.start {
@@ -236,7 +236,7 @@ h3.start {
 
 h3.archive a, h3.start a {
     text-decoration: none;
-    /*text-transform: uppercase;*/ 
+    /*text-transform: uppercase;*/
 }
 
 h4 {
@@ -270,7 +270,7 @@ a:visited {
 
 a.vimeo:after,
 a.youtube:after {
-    background: url('http://danielehniss.de/up/play.png') no-repeat scroll 0 0;
+    background: url('https://danielehniss.de/up/play.png') no-repeat scroll 0 0;
     content: "";
     display: block;
     height: 35px;
@@ -356,7 +356,9 @@ a img {
 .entry {
     font-size: 1.125em;
     line-height: 145%;
-    & p {
+
+    p,
+    li {
         margin: .75em 0;
         @include vendor-prefix(hyphens,auto);
         &:first-child {
@@ -365,7 +367,8 @@ a img {
     }
 }
 
-.entry img.size-full {
+.entry img.size-full,
+.entry img.alignnone, {
     display: block;
     height: auto;
     width: 100%;
@@ -484,7 +487,7 @@ nav.pagination .alignright {
 }
 
 .single nav.pagination .alignleft:before {
-    content: "Benachbarte Artikel: "; 
+    content: "Benachbarte Artikel: ";
     display: block;
 }
 nav.pagination .alignleft a:before,
@@ -493,7 +496,7 @@ nav.pagination .alignright a:before {
         display: inline;
     }
 
-nav.pagination a, 
+nav.pagination a,
 p.postmetadata a,
 a.weiterlesen {
     text-decoration: none;
@@ -624,7 +627,7 @@ a.comment-reply-link {
     z-index: 1;
     }
 
-p.comment-form-author span.required, 
+p.comment-form-author span.required,
 p.comment-form-email span.required {
     display: inline;
     font-size: 1em;
@@ -704,7 +707,7 @@ form.suchformular input[type="submit"] {
     appearance: none;
     }
 
-input#submit:hover, 
+input#submit:hover,
 input#submit:focus,
 form.suchformular input[type="submit"]:hover,
 form.suchformular input[type="submit"]:focus {
@@ -1001,9 +1004,9 @@ only screen and (min-device-pixel-ratio: 2) {
     border-top: 3px solid $green;
     font-family: "Noticia Text Regular";
 }
-.ie code[class*="language-"], 
+.ie code[class*="language-"],
 .ie pre[class*="language-"],
-.ie code, 
+.ie code,
 .ie pre {
     font-family: "Source Code Pro Regular";
 }
