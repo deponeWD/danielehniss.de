@@ -7,7 +7,7 @@
 		"uuidString": "142A1E4F-6D0E-4814-BF15-466A416A3044"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -701,6 +701,14 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 10668,
+		"oA": 0,
+		"oAP": "\/img\/apple-touch-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/depone01.jpg": {
 		"ft": 16384,
 		"iS": 6894,
@@ -844,7 +852,7 @@
 	"creationDate": 506082615,
 	"displayValue": "daniel14",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-kahn"
+	"iconImageName": "\/img\/apple-touch-icon.png"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1492,6 +1500,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -2031,6 +2043,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
