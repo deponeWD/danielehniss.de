@@ -47,11 +47,11 @@ $yellow: rgb(255,162,0);
 @mixin declare-font-face($font-folder, $font-family, $font-filename) {
   @font-face {
     font-family: #{$font-family};
-    src:url('./fonts/#{$font-folder}/EOT/#{$font-filename}.eot');
-    src:url('./fonts/#{$font-folder}/EOT/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/#{$font-folder}/WOFF/OTF/#{$font-filename}.otf.woff') format('woff'),
-        url('./fonts/#{$font-folder}/WOFF/TTF/#{$font-filename}.ttf.woff') format('truetype'),
-        url('./fonts/#{$font-folder}/SVG/#{$font-filename}.svg##{$font-family}') format('svg');
+    src:url('./assets/fonts/#{$font-folder}/EOT/#{$font-filename}.eot');
+    src:url('./assets/fonts/#{$font-folder}/EOT/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/#{$font-folder}/WOFF/OTF/#{$font-filename}.otf.woff') format('woff'),
+        url('./assets/fonts/#{$font-folder}/WOFF/TTF/#{$font-filename}.ttf.woff') format('truetype'),
+        url('./assets/fonts/#{$font-folder}/SVG/#{$font-filename}.svg##{$font-family}') format('svg');
         font-weight: normal;
         font-style: normal;
   }
@@ -95,12 +95,6 @@ header h1 {
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
-
-  // &:after {
-  //   content: " // blog";
-  //   // color: darken($white, 30);
-  //   display: inline;
-  // }
 
   & a,
   & a:visited {
@@ -186,10 +180,10 @@ article:last-of-type,
 
 h2 {
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: normal;
-  // text-align: center;
-  margin: 1em 0 0.4em;
+  text-align: center;
+  margin: 1em 0;
   padding: 0;
 }
 
@@ -202,53 +196,39 @@ h2.section a {
   text-decoration: none;
 }
 
-h2.start {
-  font-size: 1.7234em;
-}
-
 h3 {
-  border-bottom: 1px solid $lightgrey;
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   clear: both;
-  padding: 1.5em 0 .4em;
-  margin: .2em 0 0;
+  margin: 1em 0 0.5em;
   text-align: center;
 }
 
 h3.archive {
-  background-color: $white;
-  border-bottom: 0px solid $lightgrey;
-  border-top: 0px solid $lightgrey;
   clear: both;
-  /*font-size: 1.5em;*/
-  padding: 1em 0;
-  margin: .2em 0 .3em;
   text-align: left;
 }
 
-h3.start {
-  background: none;
-  border: none;
-  float: left;
-  font-size: 1.15em;
-  margin: 0;
-  padding: 0 .35em 0 0;
-  width: auto;
-}
-
-h3.archive a, h3.start a {
+h3.archive a {
   text-decoration: none;
 }
 
-h4 {
+h3.comment-reply-title {
+  border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
+  padding: 1em 0;
+}
+
+.entry h3 {
+  font-size: 1.5em;
+}
+
+h4 {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-weight: normal;
-  font-size: 1.25em;
+  font-size: 1.75em;
   clear: both;
-  padding: 1.5em 0 .4em;
-  margin: .2em 0 0;
+  margin: 0.5em 0 0;
   text-align: center;
 }
 
@@ -344,28 +324,22 @@ a img {
 
 .single {
 
-  & section#content {
-    padding-top: calc-em(28,16);
-
-    & h2 {
-      margin-top: 0;
-      padding-top: 0;
-    }
-  }
+  // & section#content {
+  //   padding-top: calc-em(28,16);
+  // }
 }
 
 .entry {
   font-size: 1.25em;
-  line-height: 1.45;
 
   p,
   li {
     margin: 0.75em 0;
     @include vendor-prefix(hyphens,auto);
+  }
 
-    // &:first-child {
-    //   margin: .25em 0 .75em;
-    // }
+  ol {
+    padding-left: 1.7em;
   }
 }
 
@@ -435,6 +409,16 @@ blockquote {
 
   &.interview {
     border-left: 3px solid $lightgrey;
+  }
+
+  > *:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  > *:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -513,8 +497,8 @@ a.weiterlesen {
 
 .single section#content h2.kommentaranzahl {
   border-bottom: 1px solid $lightgrey;
-  font-size: 1.5em;
-  margin: 1em 0 0.25em;
+  margin: 0.5em 0 0.25em;
+  padding: 0 0 0.5em;
   text-transform: none;
 }
 
@@ -530,21 +514,21 @@ ol.commentlist li {
 }
 
 ol.commentlist li.even > article {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   background-color: none;
   border: none;
   padding: .75em;
 }
 
 ol.commentlist li.odd > article {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   background-color: $lightgrey;
   border: none;
   padding: .75em;
 }
 
 ol.commentlist li.bypostauthor > article {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   background-color: rgb(242,250,242);
   border: 0;
 }
@@ -582,7 +566,6 @@ ol.commentlist footer p {
 }
 
 ol.commentlist footer a.kommentarzeit {
-  font-size: 0.875em;
   text-decoration: none;
 }
 
@@ -603,7 +586,6 @@ form#commentform {
 
 a.comment-reply-link {
   font-family: 'Source Sans Pro Italic', sans-serif;
-  font-size: .875em;
   font-style: normal;
   width: auto;
 }
@@ -637,7 +619,7 @@ p.comment-form-email span.required {
 #respond input[type="url"],
 #respond textarea,
 form.suchformular input[type="text"] {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   background-color: $white;
   border: 1px solid $lightgrey;
   color: $standard;
@@ -672,7 +654,7 @@ form.suchformular input[type="text"]:focus {
 
 input#submit,
 form.suchformular input[type="submit"] {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   background-color: rgb(239,239,239);
   border: 1px solid rgb(239,239,239);
   color: $mediumgrey;
@@ -703,7 +685,7 @@ form.suchformular input[type="submit"]:focus {
 }
 
 div.wpcf7-response-output {
-  @include vendor-prefix(border-radius, calc-rem(3px));
+  @include vendor-prefix(border-radius, 3px);
   margin: 2em 0 1em !important;
 }
 
@@ -836,91 +818,87 @@ form.suchformular input[type="submit"] {
 /* Media Querie ab einer Breite von 41em/656px */
 @media only screen and (min-width: 41em) {
     body {
-        border-top: 3px solid $green;
+      border-top: 3px solid $green;
     }
     section#page {
-        width: 40em;
+      width: 40em;
     }
     h2 {
-        font-size: 2.5em;
-    }
-    h2.kommentaranzahl {
-        text-align: left;
-    }
-    h3.start {
-        font-size: 2em;
+      font-size: 2.75em;
     }
     .entry {
-        font-size: 1.7em;
+      font-size: 1.7em;
+    }
+    .entry ol {
+      padding-left: 2em;
     }
     .entry img.alignleft {
-        float: left;
-        height: auto;
-        margin: 0 1em 1.75em 0;
-        width: auto;
+      float: left;
+      height: auto;
+      margin: 0 1em 1.75em 0;
+      width: auto;
     }
     .entry img.alignright {
-        float: right;
-        height: auto;
-        margin: 0 0 1em 1em;
-        width: auto;
+      float: right;
+      height: auto;
+      margin: 0 0 1em 1em;
+      width: auto;
     }
     nav#mainnav ul li {
-        display: inline-block;
-    }
-    p.proinfo.rwd {
-        margin: .75em 0 2em;
-    }
-    p.proinfo.classic {
-        padding: .75em 0 1.75em;
-        width: auto;
+      display: inline-block;
     }
     nav.pagination .alignleft {
-        float: left;
-        width: 50%;
+      float: left;
+      width: 50%;
     }
     .single nav.pagination .alignleft:before,
     nav.pagination .alignright a:before {
-        content: "";
-        display: none;
+      content: "";
+      display: none;
     }
     nav.pagination .alignleft a:before {
-        content: "\2039\00a0"; /* left arrow */
-        display: inline;
+      content: "\2039\00a0"; /* left arrow */
+      display: inline;
     }
     nav.pagination .alignright {
-        float: right;
-        text-align: right;
-        width: 50%;
+      float: right;
+      text-align: right;
+      width: 50%;
     }
     nav.pagination .alignright a:after {
-        content: "\00a0\203A"; /* right arrow */
-        display: inline;
+      content: "\00a0\203A"; /* right arrow */
+      display: inline;
     }
     ol.commentlist {
-        margin: 0;
+      margin: 0;
+    }
+    ol.commentlist .comment {
+      font-size: 1.125em;
+    }
+    ol.commentlist .comment-author {
+      font-size: 0.8em;
     }
     ol.commentlist li.even > article {
-        padding: 2em;
+      padding: 2em;
     }
     ol.commentlist li.odd > article {
-        padding: 2em;
+      padding: 2em;
     }
     ol.commentlist li ul.children {
-        margin: 0 0 0 2em;
-        padding: 0;
+      margin: 0 0 0 2em;
+      padding: 0;
     }
     footer ul {
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
     }
     footer ul.first,
     footer ul.second {
-        border-bottom: none;
-        float: left;
-        margin: 0 2% 0 0;
-        padding: 0;
-        width: 32%;
+      border-bottom: none;
+      float: left;
+      margin: 0 2% 0 0;
+      padding: 0;
+      width: 32%;
     }
     footer ul.third {
         border-top: none;

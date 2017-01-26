@@ -12,756 +12,775 @@
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.gitignore",
+		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
 	"\/404.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/404.php",
+		"oAP": "\/build\/404.php",
 		"oF": 0
 		},
 	"\/archive.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/archive.php",
+		"oAP": "\/build\/archive.php",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/EOT\/noticiatext-bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/EOT\/noticiatext-bold.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/EOT\/noticiatext-bolditalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/EOT\/noticiatext-bolditalic.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/EOT\/noticiatext-italic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/EOT\/noticiatext-italic.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/EOT\/noticiatext-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/EOT\/noticiatext-regular.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/SVG\/noticiatext-bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/SVG\/noticiatext-bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/noticia-text\/SVG\/noticiatext-bolditalic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/SVG\/noticiatext-bolditalic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/noticia-text\/SVG\/noticiatext-italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/SVG\/noticiatext-italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/noticia-text\/SVG\/noticiatext-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/SVG\/noticiatext-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bold.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bold.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bolditalic.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bolditalic.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-italic.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-italic.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-regular.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-regular.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bold-webfont.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bold-webfont.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bolditalic-webfont.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bolditalic-webfont.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-italic-webfont.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-italic-webfont.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-regular-webfont.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-regular-webfont.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Black.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Bold.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-ExtraLight.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-ExtraLight.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Light.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Light.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Medium.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Medium.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Regular.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Semibold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/EOT\/SourceCodePro-Semibold.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-ExtraLight.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-ExtraLight.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Medium.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Medium.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Semibold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/SVG\/SourceCodePro-Semibold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Black.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Black.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Bold.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Bold.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-ExtraLight.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-ExtraLight.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Light.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Light.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Medium.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Medium.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Regular.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Regular.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Semibold.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Semibold.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Black.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Black.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Bold.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Bold.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-ExtraLight.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-ExtraLight.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Light.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Light.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Medium.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Medium.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Regular.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Regular.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Semibold.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Semibold.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Black.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BlackIt.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BlackIt.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Bold.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BoldIt.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BoldIt.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLight.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLight.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLightIt.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLightIt.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-It.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-It.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Light.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Light.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-LightIt.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-LightIt.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Regular.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Semibold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Semibold.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-SemiboldIt.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/EOT\/SourceSansPro-SemiboldIt.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BlackIt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BlackIt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BoldIt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BoldIt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLight.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLight.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLightIt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLightIt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-It.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-It.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-LightIt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-LightIt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Semibold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Semibold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-SemiboldIt.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/SVG\/SourceSansPro-SemiboldIt.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Black.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Black.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BlackIt.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BlackIt.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Bold.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Bold.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BoldIt.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BoldIt.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLight.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLight.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLightIt.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLightIt.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-It.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-It.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Light.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Light.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-LightIt.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-LightIt.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Regular.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Regular.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Semibold.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Semibold.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-SemiboldIt.otf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-SemiboldIt.otf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Black.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Black.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BlackIt.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BlackIt.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Bold.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Bold.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BoldIt.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BoldIt.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLight.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLight.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLightIt.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLightIt.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-It.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-It.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Light.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Light.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-LightIt.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-LightIt.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Regular.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Regular.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Semibold.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Semibold.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-SemiboldIt.ttf.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-SemiboldIt.ttf.woff",
+		"oF": 0
+		},
+	"\/assets\/img\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 10668,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/apple-touch-icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/depone01.jpg": {
+		"ft": 16384,
+		"iS": 6894,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/depone01.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/img\/depone02.jpg": {
+		"ft": 16384,
+		"iS": 14728,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/depone02.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/js\/html5.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/min\/html5-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-1.11.0.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/min\/jquery-1.11.0.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery.oembed.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/min\/jquery.oembed.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/styles\/main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 5,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/style.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
 		"oF": 0
 		},
 	"\/comments.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/comments.php",
+		"oAP": "\/build\/comments.php",
 		"oF": 0
 		},
 	"\/display-content.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/display-content.php",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/EOT\/noticiatext-bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/EOT\/noticiatext-bold.eot",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/EOT\/noticiatext-bolditalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/EOT\/noticiatext-bolditalic.eot",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/EOT\/noticiatext-italic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/EOT\/noticiatext-italic.eot",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/EOT\/noticiatext-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/EOT\/noticiatext-regular.eot",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/SVG\/noticiatext-bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/SVG\/noticiatext-bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/noticia-text\/SVG\/noticiatext-bolditalic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/SVG\/noticiatext-bolditalic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/noticia-text\/SVG\/noticiatext-italic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/SVG\/noticiatext-italic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/noticia-text\/SVG\/noticiatext-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/SVG\/noticiatext-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bold.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bold.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bolditalic.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-bolditalic.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-italic.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-italic.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-regular.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/OTF\/noticiatext-regular.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bold-webfont.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bold-webfont.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bolditalic-webfont.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-bolditalic-webfont.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-italic-webfont.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-italic-webfont.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-regular-webfont.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/noticia-text\/WOFF\/TTF\/noticiatext-regular-webfont.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Black.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Black.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Bold.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-ExtraLight.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-ExtraLight.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Light.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Light.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Medium.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Medium.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Regular.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/EOT\/SourceCodePro-Semibold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/EOT\/SourceCodePro-Semibold.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Black.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-ExtraLight.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-ExtraLight.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Medium.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/SVG\/SourceCodePro-Semibold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/SVG\/SourceCodePro-Semibold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Black.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Black.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Bold.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Bold.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-ExtraLight.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-ExtraLight.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Light.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Light.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Medium.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Medium.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Regular.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Regular.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Semibold.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/OTF\/SourceCodePro-Semibold.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Black.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Black.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Bold.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Bold.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-ExtraLight.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-ExtraLight.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Light.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Light.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Medium.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Medium.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Regular.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Regular.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Semibold.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-code-pro\/WOFF\/TTF\/SourceCodePro-Semibold.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Black.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Black.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BlackIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BlackIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Bold.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BoldIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-BoldIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLight.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLight.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLightIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-ExtraLightIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-It.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-It.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Light.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Light.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-LightIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-LightIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Regular.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Semibold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-Semibold.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/EOT\/SourceSansPro-SemiboldIt.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/EOT\/SourceSansPro-SemiboldIt.eot",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Black.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BlackIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BlackIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Bold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Bold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BoldIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-BoldIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLight.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLight.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLightIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-ExtraLightIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-It.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-It.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-LightIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-LightIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Semibold.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-Semibold.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/SVG\/SourceSansPro-SemiboldIt.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/SVG\/SourceSansPro-SemiboldIt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Black.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Black.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BlackIt.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BlackIt.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Bold.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Bold.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BoldIt.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-BoldIt.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLight.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLight.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLightIt.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-ExtraLightIt.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-It.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-It.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Light.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Light.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-LightIt.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-LightIt.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Regular.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Regular.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Semibold.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-Semibold.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-SemiboldIt.otf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/OTF\/SourceSansPro-SemiboldIt.otf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Black.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Black.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BlackIt.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BlackIt.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Bold.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Bold.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BoldIt.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-BoldIt.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLight.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLight.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLightIt.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-ExtraLightIt.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-It.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-It.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Light.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Light.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-LightIt.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-LightIt.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Regular.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Regular.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Semibold.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-Semibold.ttf.woff",
-		"oF": 0
-		},
-	"\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-SemiboldIt.ttf.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/source-sans-pro\/WOFF\/TTF\/SourceSansPro-SemiboldIt.ttf.woff",
+		"oAP": "\/build\/display-content.php",
 		"oF": 0
 		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/footer.php",
+		"oAP": "\/build\/footer.php",
 		"oF": 0
 		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/functions.php",
+		"oAP": "\/build\/functions.php",
 		"oF": 0
 		},
 	"\/header.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/header.php",
+		"oAP": "\/build\/header.php",
 		"oF": 0
-		},
-	"\/img\/apple-touch-icon.png": {
-		"ft": 32768,
-		"iS": 10668,
-		"oA": 0,
-		"oAP": "\/img\/apple-touch-icon.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/depone01.jpg": {
-		"ft": 16384,
-		"iS": 6894,
-		"oA": 0,
-		"oAP": "\/img\/depone01.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/depone02.jpg": {
-		"ft": 16384,
-		"iS": 14728,
-		"oA": 0,
-		"oAP": "\/img\/depone02.jpg",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/index.php",
+		"oAP": "\/build\/index.php",
 		"oF": 0
-		},
-	"\/js\/html5.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/html5-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery-1.11.0.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery-1.11.0.min-ck.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.oembed.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery.oembed.min-ck.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/page.php",
+		"oAP": "\/build\/page.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -773,7 +792,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/README.html",
+		"oAP": "\/build\/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -786,38 +805,32 @@
 		"ft": 32768,
 		"iS": 159844,
 		"oA": 0,
-		"oAP": "\/screenshot.png",
+		"oAP": "\/build\/screenshot.png",
 		"oF": 0,
 		"opt": 0
 		},
 	"\/search.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/search.php",
+		"oAP": "\/build\/search.php",
 		"oF": 0
 		},
 	"\/searchform.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/searchform.php",
+		"oAP": "\/build\/searchform.php",
 		"oF": 0
 		},
 	"\/sidebar.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/sidebar.php",
+		"oAP": "\/build\/sidebar.php",
 		"oF": 0
 		},
 	"\/single.php": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/single.php",
-		"oF": 0
-		},
-	"\/start.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/start.php",
+		"oAP": "\/build\/single.php",
 		"oF": 0
 		},
 	"\/style.css": {
@@ -826,22 +839,9 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/style-min.css",
+		"oAP": "\/build\/style-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style.css",
-		"oF": 2,
-		"oS": 3,
-		"uL": 1
 		}
 	},
 "hooks": [
@@ -852,7 +852,7 @@
 	"creationDate": 506082615,
 	"displayValue": "daniel",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "\/img\/apple-touch-icon.png"
+	"iconImageName": "\/assets\/img\/apple-touch-icon.png"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1107,7 +1107,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 0,
+	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
