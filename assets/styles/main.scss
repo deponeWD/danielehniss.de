@@ -183,7 +183,7 @@ h2 {
   font-size: 2.25em;
   font-weight: normal;
   text-align: center;
-  margin: 1em 0;
+  margin: 1em 0 0.75em;
   padding: 0;
 }
 
@@ -214,7 +214,7 @@ h3.archive a {
 }
 
 h3.comment-reply-title {
-  border-top: 1px solid $lightgrey;
+  // border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
   padding: 1em 0;
 }
@@ -320,13 +320,6 @@ a.youtube iframe {
 
 a img {
     border: none;
-}
-
-.single {
-
-  // & section#content {
-  //   padding-top: calc-em(28,16);
-  // }
 }
 
 .entry {
@@ -511,6 +504,11 @@ ol.commentlist li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ol.commentlist article:last-of-type,
+ol.commentlist article {
+  margin: 0;
 }
 
 ol.commentlist li.even > article {
@@ -870,13 +868,11 @@ form.suchformular input[type="submit"] {
       display: inline;
     }
     ol.commentlist {
+      font-size: 1.125em;
       margin: 0;
     }
-    ol.commentlist .comment {
-      font-size: 1.125em;
-    }
     ol.commentlist .comment-author {
-      font-size: 0.8em;
+      font-size: 0.85em;
     }
     ol.commentlist li.even > article {
       padding: 2em;
@@ -887,6 +883,9 @@ form.suchformular input[type="submit"] {
     ol.commentlist li ul.children {
       margin: 0 0 0 2em;
       padding: 0;
+    }
+    #respond {
+      font-size: 1.125em;
     }
     footer ul {
       margin: 0;
