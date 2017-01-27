@@ -130,7 +130,7 @@ add_filter('comment_form_default_fields','my_fields');
             echo '<meta property="og:image" content="' . $default_image . '"/>';
         }
         else{
-            $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+            $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
             echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
         }
         echo "
@@ -138,8 +138,33 @@ add_filter('comment_form_default_fields','my_fields');
     }
     add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
+    // Twitter-Cards
+    function insert_twitter_cards() {
+      global $post;
+      if ( !is_singular()) //if it is not a post or a page
+        return;
+        echo '<meta name="twitter:url" content="' . get_permalink() . '">';
+        echo '<meta name="twitter:site" content="depone">';
+        echo '<meta name="twitter:domain" content="danielehniss.de">';
+        echo '<meta name="twitter:card" content="summary_large_image">';
+        echo '<meta name="twitter:creator" content="@depone">';
+        echo '<meta name="twitter:title" content="' . get_the_title() . '">';
+        echo '<meta name="twitter:description" content="' . get_the_excerpt() . '">';
+      if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
+        $fallback_image="https://danielehniss.de/apple-touch-icon-precomposed.png"; //replace this with a default image on your server or an image in your media library
+        echo '<meta name="twitter:image:src" content="' . $fallback_image . '"/>';
+      }
+      else{
+        $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+        echo '<meta name="twitter:image" content="' . esc_attr( $post_thumbnail[0] ) . '"/>';
+      }
+      echo "";
+    }
+    add_action( 'wp_head', 'insert_twitter_cards', 5 );
+
 // Install Post Formats
 add_theme_support( 'post-formats', array( 'quote' ) );
+
 // Add automatic-feed-links to the head
 global $wp_version;
 if ( version_compare( $wp_version, '3.0', '>=' ) ) :
