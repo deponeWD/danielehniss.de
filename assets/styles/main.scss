@@ -1,61 +1,20 @@
+@charset 'UTF-8';
 /*!
 Theme Name: DE-Blog 2017
 Description: Das Theme für mein Blog.
-Version: 0.2
+Version: 2.0
 Author: Daniel Ehniss
 Author URI: https://danielehniss.de
 
 */
 
-/* Farben */
-$white: rgb(250,250,250);
-$almostwhite: rgb(245,245,245);
-$lightgrey: rgb(230,230,230);
-$mediumgrey: rgb(130,130,130);
-$standard: rgb(88,88,90);
-$green: rgb(0,153,0);
-$yellow: rgb(255,162,0);
 
+// Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
 
-
-/*
-** Vendor Prefix Mixin
-*/
-@mixin vendor-prefix($name, $argument) {
-  -webkit-#{$name}: $argument;
-  -moz-#{$name}: $argument;
-  -ms-#{$name}: $argument;
-  -o-#{$name}: $argument;
-  #{$name}: $argument;
-}
-
-/* em-Wert ausrechnen lassen */
-@function calc-em($target-px, $context: null) {
-  @if $context {
-    @return ($target-px / $context) * 1em;
-  }
-  @else {
-    @return ($target-px / 16px) * 1em;
-  }
-}
-
-/*
-** Embedding the Fonts
-** (Mixin for bullet proof font declaration syntax)
-*/
-
-@mixin declare-font-face($font-folder, $font-family, $font-filename) {
-  @font-face {
-    font-family: #{$font-family};
-    src:url('./assets/fonts/#{$font-folder}/EOT/#{$font-filename}.eot');
-    src:url('./assets/fonts/#{$font-folder}/EOT/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/#{$font-folder}/WOFF/OTF/#{$font-filename}.otf.woff') format('woff'),
-        url('./assets/fonts/#{$font-folder}/WOFF/TTF/#{$font-filename}.ttf.woff') format('truetype'),
-        url('./assets/fonts/#{$font-folder}/SVG/#{$font-filename}.svg##{$font-family}') format('svg');
-        font-weight: normal;
-        font-style: normal;
-  }
-}
 
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Italic', 'SourceSansPro-It');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Regular', 'SourceSansPro-Regular');
@@ -69,7 +28,6 @@ header, nav, section, article, aside, footer {
 
 body {
   background-color: $white;
-  // border-top: 5px solid $green;
   color: $standard;
   font-family: "Source Sans Pro Regular", sans-serif;
   font-size: 100%;
@@ -82,19 +40,24 @@ section#page {
   margin: 0 auto;
   overflow: hidden;
   width: 90%;
+
+  @include breakpoint($medium) {
+    width: rem(640px);
+  }
 }
 
 header h1 {
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-size: 1em;
-  // height: calc-em(120,16);
-  // margin: 2em 0 0;
-  // line-height: 0.7;
+  font-size: rem(16px);
   margin: 0;
-  padding: 1em 0 0;
+  padding: rem(16px) 0 0;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
+
+  @include breakpoint($medium) {
+    padding: rem(32px) 0 0;
+  }
 
   & a,
   & a:visited {
@@ -119,22 +82,22 @@ header h1 {
   }
 }
 
-
 header h1 span,
 header .description {
-  left: -9999px;
-  position: absolute;
-  top: -9999px;
+  @include visually-hidden;
 }
 
 nav#mainnav {
   display: block;
-  font-family: "Source Sans Pro Regular", sans-serif;
+  font-size: rem(16px);
   left: 0;
   margin: 0;
-  padding: 0 0 0.5em;
   top: 0;
   width: 100%;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+  }
 }
 
 nav#mainnav  ul {
@@ -145,46 +108,52 @@ nav#mainnav  ul {
 }
 
 nav#mainnav ul li {
-  border-radius: calc-em(3,16);
   display: block;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+
+  @include breakpoint($medium) {
+    display: inline-block;
+  }
 }
 
 nav#mainnav ul li a {
   color: $green;
   margin: 0;
-  padding: 0 0.3125em;
+  padding: 0 rem(5px);
   text-decoration: none;
 }
 
 nav#mainnav ul li ul.children {
-  left: -9999px;
-  position: absolute;
-  top: -9999px;
+  @include visually-hidden;
 }
 
 article {
   border-bottom: 1px solid $lightgrey;
-  margin: 0 0 3em;
-  padding: 0 0 3em;
+  margin: 0 0 rem(48px);
+  padding: 0 0 rem(48px);
 }
 
 article:last-of-type,
 .single article {
   border-bottom: none;
-  margin: 0 0 3.5em;
+  margin: 0 0 rem(48px);
   padding: 0;
 }
 
 h2 {
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-size: 2.25em;
+  font-size: rem(36px);
   font-weight: normal;
   text-align: center;
-  margin: 1em 0 0.75em;
+  margin: rem(16px) 0 rem(14px);
   padding: 0;
+
+  @include breakpoint($medium) {
+    font-size: rem(44px);
+    margin: rem(32px) 0 rem(28px);
+  }
 }
 
 h2 a {
@@ -198,10 +167,14 @@ h2.section a {
 
 h3 {
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-size: 2em;
+  font-size: rem(32px);
   clear: both;
-  margin: 1em 0 0.5em;
+  margin: rem(16px) 0 rem(8px);
   text-align: center;
+
+  @include breakpoint($medium) {
+    margin: rem(32px) 0 rem(16px);
+  }
 }
 
 h3.archive {
@@ -213,22 +186,24 @@ h3.archive a {
   text-decoration: none;
 }
 
+h2.comment-count,
 h3.comment-reply-title {
-  // border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
-  padding: 1em 0;
-}
+  font-size: rem(32px);
+  margin-top: 0;
+  padding: rem(16px) 0;
 
-.entry h3 {
-  font-size: 1.5em;
+  @include breakpoint($medium) {
+    padding: rem(32px) 0;
+  }
 }
 
 h4 {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-weight: normal;
-  font-size: 1.75em;
+  font-size: rem(28px);
   clear: both;
-  margin: 0.5em 0 0;
+  margin: rem(8px) 0 0;
   text-align: center;
 }
 
@@ -252,12 +227,12 @@ a.youtube:after {
   background: url('https://danielehniss.de/up/play.png') no-repeat scroll 0 0;
   content: "";
   display: block;
-  height: 35px;
+  height: rem(35px);
   position: absolute;
-  margin: -54px 0 0 10px;
+  margin: rem(-54px) 0 0 rem(10px);
   opacity: 0.7;
   overflow: hidden;
-  width: 35px;
+  width: rem(35px);
   z-index: 10;
 }
 
@@ -323,34 +298,89 @@ a img {
 }
 
 .entry {
-  font-size: 1.25em;
+  font-size: rem(20px);
+
+  @include breakpoint($medium) {
+    font-size: rem(28px);
+  }
 
   p,
   li {
-    margin: 0.75em 0;
+    margin: rem(16px) 0;
     @include vendor-prefix(hyphens,auto);
+
+    @include breakpoint($medium) {
+      margin: rem(24px) 0;
+    }
   }
 
   ol {
-    padding-left: 1.7em;
+    margin: 0;
+    padding-left: rem(36px);
+
+    @include breakpoint($medium) {
+      padding-left: rem(44px);
+    }
   }
+}
+
+.entry img {
+  @include vendor-prefix(border-radius, $border-radius);
+  display: block;
+  height: auto;
 }
 
 .entry img.size-full,
 .entry img.alignnone, {
-  display: block;
-  height: auto;
   width: 100%;
 }
 
 .entry img.alignleft,
 .entry img.alignright {
-  display: block;
   float: none;
-  height: auto;
-  margin: .5em 0;
+  margin: rem(16px) 0;
   width: 100%;
-  max-width: 320px;
+  max-width: rem(320px);
+
+  @include breakpoint($medium) {
+    width: auto;
+  }
+}
+
+.entry img.alignleft {
+  float: left;
+  margin: 0 rem(16px) rem(28px) 0;
+}
+
+.entry img.alignright {
+  float: right;
+  margin: 0 0 rem(28px) rem(16px);
+}
+
+.entry .two.first {
+  @include breakpoint($small) {
+    float: left;
+    display: block;
+    padding-bottom: rem(48px);
+    width: 49%;
+  }
+}
+
+.entry .two.second {
+  @include breakpoint($small) {
+    float: right;
+    display: block;
+    padding-bottom: rem(48px);
+    width: 49%;
+  }
+}
+
+.entry .two.second:after {
+  @include breakpoint($small) {
+    clear: both;
+    content: "";
+    display: block;
+  }
 }
 
 .entry em {
@@ -372,12 +402,17 @@ a img {
 
 .entry small {
   color: $mediumgrey;
-  font-family: "Source Sans Pro Regular", serif;
-  font-size: calc-em(12,16);
+  font-size: rem(16px);
+  font-style: normal;
+  line-height: 1;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+  }
 
   & a,
   & a:visited {
-    color: lighten($green,5%);
+    color: $green;
   }
 }
 
@@ -394,14 +429,14 @@ hr {
 }
 
 blockquote {
-  border-left: 3px solid $green;
+  border-left: rem(3px) solid $green;
   font-family: "Source Sans Pro Italic", serif;
   font-style: normal;
-  padding: .5em 6%;
-  margin: .5em 0;
+  padding: rem(8px) 6%;
+  margin: rem(8px) 0;
 
   &.interview {
-    border-left: 3px solid $lightgrey;
+    border-left: rem(3px) solid $lightgrey;
   }
 
   > *:first-of-type {
@@ -416,42 +451,50 @@ blockquote {
 }
 
 p.question {
-  border-top: 3px solid $lightgrey;
-  margin-top: calc-em(16,16);
-  padding-top: calc-em(12,16);
+  border-top: rem(3px) solid $lightgrey;
+  margin-top: rem(16px);
+  padding-top: rem(12px);
 }
 
 .disclaimer {
-  border-left: 3px solid $yellow;
-  font-family: "Source Sans Pro Regular", sans-serif;
+  border-left: rem(3px) solid $yellow;
   font-style: normal;
-  padding: 0.5em 6%;
-  margin: 0.5em 0;
+  padding: rem(16px) 6%;
+  margin: rem(16px) 0;
 }
 
 blockquote p small {
+  font-family: "Source Sans Pro Regular", sans-serif;
   font-style: normal;
+
+  &:before {
+    display: inline;
+    content: "—";
+    padding-right: 0.35em;
+  }
 }
 
 blockquote p.source {
-  line-height: 95%;
-
-  & small {
-    font-style: normal;
-  }
+  line-height: 1;
 }
 
 pre,
 code {
   font-family: "Source Code Pro Regular", monospace;
-  font-size: 0.9em;
+  font-size: rem(16px);
 }
 
 nav.pagination {
   border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
   display: block;
-  padding: 1em 0;
+  font-size: rem(16px);
+  padding: rem(16px) 0;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px); // 2.
+    padding: rem(32px) 0;
+  }
 }
 
 nav.pagination:after {
@@ -462,20 +505,54 @@ nav.pagination:after {
 
 nav.pagination .alignleft {
   width: 100%;
+
+  @include breakpoint($medium) {
+    float: left;
+    width: 50%;
+  }
 }
 
 nav.pagination .alignright {
   width: 100%;
+
+  @include breakpoint($medium) {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
 }
 
 .single nav.pagination .alignleft:before {
   content: "Benachbarte Artikel: ";
   display: block;
 }
+
 nav.pagination .alignleft a:before,
 nav.pagination .alignright a:before {
   content: "\203A\00a0"; /* right arrow */
   display: inline;
+}
+
+nav.pagination .alignleft a:before {
+  @include breakpoint($medium) {
+    content: "\2039\00a0"; /* left arrow */
+    display: inline;
+  }
+}
+
+.single nav.pagination .alignleft:before,
+nav.pagination .alignright a:before {
+  @include breakpoint($medium) {
+    content: "";
+    display: none;
+  }
+}
+
+nav.pagination .alignright a:after {
+  @include breakpoint($medium) {
+    content: "\00a0\203A"; /* right arrow */
+    display: inline;
+  }
 }
 
 nav.pagination a,
@@ -484,20 +561,29 @@ a.weiterlesen {
   text-decoration: none;
 }
 
+p.postmetadata,
+p.logged-in-as {
+  color: $mediumgrey;
+  font-size: rem(16px);
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+  }
+}
+
 #comments {
   clear: both;
 }
 
-.single section#content h2.kommentaranzahl {
-  border-bottom: 1px solid $lightgrey;
-  margin: 0.5em 0 0.25em;
-  padding: 0 0 0.5em;
-  text-transform: none;
-}
-
 ol.commentlist {
-  margin: .75em 0 0;
+  font-size: rem(16px);
+  margin: rem(12px) 0 0;
   padding: 0;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+    margin: 0;
+  }
 }
 
 ol.commentlist li {
@@ -512,35 +598,42 @@ ol.commentlist article {
 }
 
 ol.commentlist li.even > article {
-  @include vendor-prefix(border-radius, 3px);
+  @include vendor-prefix(border-radius, $border-radius);
   background-color: none;
   border: none;
-  padding: .75em;
 }
 
 ol.commentlist li.odd > article {
-  @include vendor-prefix(border-radius, 3px);
-  background-color: $lightgrey;
+  @include vendor-prefix(border-radius, $border-radius);
+  background-color: $almostwhite;
   border: none;
-  padding: .75em;
 }
 
 ol.commentlist li.bypostauthor > article {
-  @include vendor-prefix(border-radius, 3px);
-  background-color: rgb(242,250,242);
+  @include vendor-prefix(border-radius, $border-radius);
+  background-color: tint($green, 90);
   border: 0;
 }
 
-ol.commentlist li.pingback {
+ol.commentlist li > article {
+  padding: rem(12px);
+
+  @include breakpoint($medium) {
+    padding: rem(32px) !important;
+  }
 }
 
 ol.commentlist li ul.children {
-  margin: 0 0 0 0.75em;
+  margin: 0 0 0 rem(12px);
   padding: 0;
+
+  @include breakpoint($medium) {
+    margin: 0 0 0 rem(32px);
+  }
 }
 
 ol.commentlist li ul.children li {
-  margin: 0 0 1em 0;
+  margin: 0 0 rem(16px) 0;
   padding: 0;
 }
 
@@ -554,8 +647,8 @@ ol.commentlist footer {
 ol.commentlist footer img.avatar {
   float: left;
   height: auto;
-  margin: 0 1em 1em 0;
-  width: 3.125em;
+  margin: 0 rem(16px) rem(16px) 0;
+  width: rem(50px);
 }
 
 ol.commentlist footer p {
@@ -563,8 +656,18 @@ ol.commentlist footer p {
   padding: 0;
 }
 
-ol.commentlist footer a.kommentarzeit {
+ol.commentlist footer a.kommentarzeit,
+ol.commentlist footer a.comment-edit-link {
   text-decoration: none;
+  font-size: rem(14px);
+
+  @include breakpoint($medium) {
+    font-size: rem(18px);
+  }
+}
+
+ol.commentlist a.comment-edit-link {
+  margin-left: 0.35em;
 }
 
 ol.commentlist .comment-content {
@@ -572,13 +675,24 @@ ol.commentlist .comment-content {
 }
 
 ol.commentlist .comment-content p {
-  margin: 0.5em 0;
+  margin: rem(8px) 0;
   padding: 0;
+}
+
+em.comment-awaiting-moderation {
+  clear: both;
+  color: $green;
+  display: block;
+  font-size: rem(14px);
+
+  @include breakpoint($medium) {
+    font-size: rem(18px);
+  }
 }
 
 form#commentform {
   margin: 0 auto;
-  padding: .5em 0;
+  padding: rem(8px) 0;
   width: 98%;
 }
 
@@ -588,9 +702,13 @@ a.comment-reply-link {
   width: auto;
 }
 
+a#cancel-comment-reply-link {
+  text-decoration: none;
+}
+
 #respond label {
   display: inline;
-  font-size: 1em;
+  font-size: rem(16px);
   left: 0;
   padding: 0;
   position: relative;
@@ -598,18 +716,26 @@ a.comment-reply-link {
   top: 0;
   width: auto;
   z-index: 1;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+  }
 }
 
 p.comment-form-author span.required,
 p.comment-form-email span.required {
   display: inline;
-  font-size: 1em;
-  line-height: 1em;
+  font-size: rem(16px);
+  line-height: 1;
   padding: 0;
   position: relative;
   right: 0;
   width: auto;
   z-index: 1;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px); // 2.
+  }
 }
 
 #respond input[type="text"],
@@ -617,15 +743,15 @@ p.comment-form-email span.required {
 #respond input[type="url"],
 #respond textarea,
 form.suchformular input[type="text"] {
-  @include vendor-prefix(border-radius, 3px);
+  @include vendor-prefix(border-radius, $border-radius);
   background-color: $white;
   border: 1px solid $lightgrey;
   color: $standard;
   display: block;
-  font-family: "Source Sans Pro Regular",sans-serif;
-  font-size: 1em;
-  margin: .1875em 0 0;
-  padding: .3125em 2%;
+  font-family: inherit;
+  font-size: rem(16px);
+  margin: rem(3px) 0 0;
+  padding: rem(5px) 2%;
   position: relative;
   width: 96%;
   -webkit-transition: border ease-out .5s, -webkit-box-shadow ease-out .5s, color ease-out .5s, background ease-out .5s;
@@ -634,6 +760,10 @@ form.suchformular input[type="text"] {
   transition: border ease-out .5s, box-shadow ease-out .5s, color ease-out .5s, background ease-out .5s;
   -webkit-appearance:none;
   -moz-appearance:none;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px); // 2.
+  }
 }
 
 #respond input[type="text"]:focus,
@@ -641,9 +771,9 @@ form.suchformular input[type="text"] {
 #respond input[type="url"]:focus,
 #respond textarea:focus,
 form.suchformular input[type="text"]:focus {
-  background-color: rgb(255,255,255);
-  border: 1px solid rgb(125,201,125);
-  box-shadow: 0 0 5px rgb(125,201,125);
+  background-color: $white;
+  border: 1px solid $green;
+  box-shadow: 0 0 5px $green;
   color: $standard;
   outline: none;
   text-indent: 0;
@@ -652,17 +782,17 @@ form.suchformular input[type="text"]:focus {
 
 input#submit,
 form.suchformular input[type="submit"] {
-  @include vendor-prefix(border-radius, 3px);
-  background-color: rgb(239,239,239);
-  border: 1px solid rgb(239,239,239);
-  color: $mediumgrey;
-  font-family: "Source Sans Pro Regular",sans-serif;
-  font-size: 1em;
+  @include vendor-prefix(border-radius, $border-radius);
+  background-color: $standard;
+  border: 1px solid $standard;
+  color: $white;
+  font-family: inherit;
+  font-size: rem(16px);
   font-weight: 500;
   outline: none;
-  padding: .3125em 2%;
+  padding: rem(5px) 2%;
   text-decoration: none;
-  text-shadow: 0 1px white;
+  text-transform: uppercase;
   -webkit-transition: color .5s ease-out, background-color .5s ease-out;
   -moz-transition: color .5s ease-out, background-color .5s ease-out;
   -o-transition: color .5s ease-out, background-color .5s ease-out;
@@ -670,21 +800,26 @@ form.suchformular input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px); // 2.
+  }
 }
 
 input#submit:hover,
 input#submit:focus,
 form.suchformular input[type="submit"]:hover,
 form.suchformular input[type="submit"]:focus {
-  background-color: $lightgrey;
-  color: rgb(0,0,0);
+  background-color: $mediumgrey;
+  border: 1px solid $lightgrey;
+  color: $white;
   cursor: pointer;
   outline: none;
 }
 
 div.wpcf7-response-output {
-  @include vendor-prefix(border-radius, 3px);
-  margin: 2em 0 1em !important;
+  @include vendor-prefix(border-radius, $border-radius);
+  margin: rem(32px) 0 rem(16px) !important;
 }
 
 div.wpcf7-mail-sent-ok {
@@ -698,8 +833,12 @@ footer {
   clear: both;
   display: block;
   text-align: center;
-  margin: 1em 0 3em;
-  padding: 1.5em 0 0.5em;
+  margin: rem(16px) 0 rem(48px);
+  padding: rem(16px) 0 0;
+
+  @include breakpoint($medium) {
+    padding-top: rem(24px);
+  }
 }
 
 footer ul {
@@ -711,19 +850,79 @@ footer ul {
 footer ul.first,
 footer ul.second {
   border-bottom: 1px solid $lightgrey;
-  margin: 0 0 1em 0;
-  padding: 0 0 1em;
+  margin: 0 0 rem(16px) 0;
+  padding: 0 0 rem(16px);
+
+  @include breakpoint($small) {
+    border-bottom: none;
+    margin: 0 0 rem(16px) 0;
+    padding: 0 0 rem(16px);
+    width: 49%;
+  }
+
+  @include breakpoint($medium) {
+    margin: 0 2% 0 0;
+    padding: 0;
+    width: 32%;
+  }
+}
+
+footer ul.first {
+  @include breakpoint($small) {
+    float: left;
+  }
+}
+
+footer ul.second {
+  @include breakpoint($small) {
+    float: right;
+  }
+  @include breakpoint($medium) {
+    float: left;
+  }
 }
 
 footer ul.third {
   margin: 0;
   padding: 0;
+
+  @include breakpoint($small) {
+    border-top: 1px solid $lightgrey;
+    float: none;
+    clear: both;
+    margin: 0;
+    padding: rem(16px) 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  @include breakpoint($medium) {
+    border-top: none;
+    clear: none;
+    float: right;
+    padding: 0 0 rem(24px);
+    text-align: left;
+    width: 32%;
+  }
 }
 
 footer ul li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+footer ul.third li {
+  @include breakpoint($small) {
+    display: inline;
+    padding: 0 rem(5px);
+    width: auto;
+  }
+
+  @include breakpoint($medium) {
+    display: block;
+    padding: 0;
+  }
 }
 
 footer ul li strong {
@@ -741,203 +940,63 @@ footer ul.third li a {
 
 footer p.cc {
   border-top: 1px solid $lightgrey;
-  font-family: "Source Sans Pro Regular", sans-serif;
-  padding: 1em 0 0;
+  font-size: rem(16px);
+  padding: rem(16px) 0 0;
+
+  @include breakpoint($medium) {
+    font-size: rem(20px);
+    margin-bottom: rem(24px);
+    padding-top: rem(24px);
+  }
+}
+
+.suchfeld {
+  @include clearfix;
+
+  @include breakpoint($small) {
+    clear: both;
+    display: block;
+    float: none;
+    padding: rem(14px) 0 0;
+    width: 100%;
+  }
+
+  @include breakpoint($medium) {
+    border-top: 1px solid $lightgrey;
+    float: none;
+    margin: rem(24px) 0 0;
+    padding: rem(24px) 0 0;
+  }
+}
+
+form.suchformular {
+  @include breakpoint($medium) {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 
 form.suchformular input[type="text"] {
   float: left;
-  margin: 0.1875em 2% 0 0;
+  margin: rem(3px) 2% 0 0;
   width: 50%;
 }
 
 form.suchformular input[type="submit"] {
   float: left;
-  margin: 0.1875em 0 0 0;
+  margin: rem(3px) 0 0 0;
   width: 40%;
 }
 
-/* Media Querie ab einer Breite von 26em/416px */
-@media only screen and (min-width: 26em) {
-    .entry .two.first {
-        float: left;
-        display: block;
-        padding-bottom: 3em;
-        width: 49%;
-    }
-    .entry .two.second {
-        float: right;
-        display: block;
-        padding-bottom: 3em;
-        width: 49%;
-    }
-    .entry .two.second:after {
-        clear: both;
-        content: "";
-        display: block;
-    }
-    footer ul.first {
-        border-bottom: none;
-        float: left;
-        margin: 0 0 1em 0;
-        padding: 0 0 1em;
-        width: 49%;
-    }
-    footer ul.second {
-        border-bottom: none;
-        float: right;
-        margin: 0 0 1em 0;
-        padding: 0 0 1em;
-        width: 49%;
-    }
-    footer ul.third {
-        border-top: 1px solid $lightgrey;
-        float: none;
-        clear: both;
-        margin: 0;
-        padding: 1em 0 0;
-        text-align: center;
-        width: 100%;
-    }
-    footer ul.third li {
-        display: inline;
-        padding: 0 .3125em;
-        width: auto;
-    }
-    .suchfeld {
-        clear: both;
-        display: block;
-        float: none;
-        padding: .5em 0 0;
-        width: 100%;
-    }
+/**
+ * Firefox Fix
+ * Without that the submit button will be too high.
+ * thanks to http://martinwolf.org/2015/07/23/equal-height-input-and-submit-button/
+ */
+form.suchformular input[type="submit"]::-moz-focus-inner {
+    border: 0;
 }
 
-/* Media Querie ab einer Breite von 41em/656px */
-@media only screen and (min-width: 41em) {
-    body {
-      border-top: 3px solid $green;
-    }
-    section#page {
-      width: 40em;
-    }
-    h2 {
-      font-size: 2.75em;
-    }
-    .entry {
-      font-size: 1.7em;
-    }
-    .entry ol {
-      padding-left: 2em;
-    }
-    .entry img.alignleft {
-      float: left;
-      height: auto;
-      margin: 0 1em 1.75em 0;
-      width: auto;
-    }
-    .entry img.alignright {
-      float: right;
-      height: auto;
-      margin: 0 0 1em 1em;
-      width: auto;
-    }
-    nav#mainnav ul li {
-      display: inline-block;
-    }
-    nav.pagination .alignleft {
-      float: left;
-      width: 50%;
-    }
-    .single nav.pagination .alignleft:before,
-    nav.pagination .alignright a:before {
-      content: "";
-      display: none;
-    }
-    nav.pagination .alignleft a:before {
-      content: "\2039\00a0"; /* left arrow */
-      display: inline;
-    }
-    nav.pagination .alignright {
-      float: right;
-      text-align: right;
-      width: 50%;
-    }
-    nav.pagination .alignright a:after {
-      content: "\00a0\203A"; /* right arrow */
-      display: inline;
-    }
-    ol.commentlist {
-      font-size: 1.125em;
-      margin: 0;
-    }
-    ol.commentlist .comment-author {
-      font-size: 0.85em;
-    }
-    ol.commentlist li.even > article {
-      padding: 2em;
-    }
-    ol.commentlist li.odd > article {
-      padding: 2em;
-    }
-    ol.commentlist li ul.children {
-      margin: 0 0 0 2em;
-      padding: 0;
-    }
-    #respond {
-      font-size: 1.125em;
-    }
-    footer ul {
-      margin: 0;
-      padding: 0;
-    }
-    footer ul.first,
-    footer ul.second {
-      border-bottom: none;
-      float: left;
-      margin: 0 2% 0 0;
-      padding: 0;
-      width: 32%;
-    }
-    footer ul.third {
-        border-top: none;
-        clear: none;
-        float: right;
-        margin: 0;
-        padding: 0 0 1.5em;
-        text-align: left;
-        width: 32%;
-    }
-    footer ul.third li {
-        display: block;
-        padding: 0;
-        width: auto;
-    }
-    .suchfeld {
-        border-top: 1px solid $lightgrey;
-        clear: both;
-        display: block;
-        float: none;
-        margin: 1em 0 0;
-        padding: .85em 0 0;
-        width: 100%;
-    }
-    form.suchformular {
-        margin: 0 auto;
-        width: 70%;
-    }
-}
-
-/* Media Querie ab einer Breite von 50em/800px */
-// @media only screen and (min-width: 50em) {
-//     .page-id-6 section#page {
-//         width: 50em;
-//     }
-//     p.proinfo.classic {
-//         padding: 1.5em 0 1.75em;
-//         width: auto;
-//     }
-// }
 
 /* Doppelte Aufloesung fuer Retina-Displays */
 @media only screen and (-moz-min-device-pixel-ratio: 2),
@@ -953,136 +1012,6 @@ only screen and (min-device-pixel-ratio: 2) {
     header h1 a:focus {
         background: url(../../../apple-touch-icon.png) no-repeat scroll top center $white;
         background-size: 120px 120px;
-        opacity: .7;
+        opacity: 0.7;
     }
 }
-
-/* IE7 und IE8 Anpassungen */
-// .ie body {
-//     border-top: 3px solid $green;
-//     font-family: "Source Sans Pro Regular";
-// }
-// .ie code[class*="language-"],
-// .ie pre[class*="language-"],
-// .ie code,
-// .ie pre {
-//     font-family: "Source Code Pro Regular";
-// }
-// .ie section#page {
-//     width: 40em;
-// }
-// .ie7 nav#mainnav ul li {
-//     display: inline;
-// }
-// .ie h2 {
-//     font-size: 2.25em;
-// }
-// .ie h2.kommentaranzahl {
-//     text-align: left;
-// }
-// .ie h3.start {
-//     font-size: 1.3em;
-// }
-// .ie .entry {
-//     font-size: 1.3125em;
-// }
-// .ie .entry img.alignleft {
-//     float: left;
-//     height: auto;
-//     margin: 0 1em 1.75em 0;
-//     width: auto;
-// }
-// .ie .entry img.alignright {
-//     float: right;
-//     height: auto;
-//     margin: 0 0 1em 1em;
-//     width: auto;
-// }
-// .ie p.proinfo.rwd {
-//     margin: .75em 0 2em;
-// }
-// .ie p.proinfo.classic {
-//     padding: .75em 0 1.75em;
-//     width: auto;
-// }
-// .ie7 nav.pagination {
-//     border-bottom: none;
-// }
-// .ie nav.pagination .alignleft {
-//     display: block;
-//     float: left;
-//     padding: 0 0 .75em;
-//     width: 50%;
-// }
-// .ie nav.pagination .alignleft a:before {
-//     content: "\2039\00a0"; /* left arrow */
-//     display: inline;
-// }
-// .ie nav.pagination .alignright {
-//     display: block;
-//     float: right;
-//     text-align: right;
-//     padding: 0 0 .75em;
-//     width: 50%;
-// }
-// .ie nav.pagination .alignright a:after {
-//     content: "\00a0\203A"; /* right arrow */
-//     display: inline;
-// }
-// .ie8 .single nav.pagination .alignleft:before,
-// .ie8 nav.pagination .alignright a:before {
-//     content: "";
-//     display: none;
-// }
-// .ie ol.commentlist {
-//     margin: 0;
-// }
-// .ie ol.commentlist li.even > article {
-//     padding: 2em;
-// }
-// .ie ol.commentlist li.odd > article {
-//     padding: 2em;
-// }
-// .ie ol.commentlist li ul.children {
-//     margin: 0 0 0 2em;
-//     padding: 0;
-// }
-// .ie footer ul {
-//     margin: 0;
-//     padding: 0;
-// }
-// .ie footer ul.first,
-// .ie footer ul.second {
-//     border-bottom: none;
-//     float: left;
-//     margin: 0 2% 0 0;
-//     padding: 0;
-//     width: 31%;
-// }
-// .ie footer ul.third {
-//     border-top: none;
-//     clear: none !important;
-//     float: right;
-//     margin: 0;
-//     padding: 0 0 1.5em;
-//     text-align: left;
-//     width: 31%;
-// }
-// .ie footer ul.third li {
-//     display: block;
-//     padding: 0;
-//     width: auto;
-// }
-// .ie .suchfeld {
-//     border-top: 1px solid $lightgrey;
-//     clear: both;
-//     display: block;
-//     float: none;
-//     margin: 1em 0 0;
-//     padding: .85em 0 0;
-//     width: 100%;
-// }
-// .ie form.suchformular {
-//     margin: 0 auto;
-//     width: 70%;
-// }

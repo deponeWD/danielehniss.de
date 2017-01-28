@@ -32,6 +32,26 @@
     add_filter('excerpt_more', 'blog_excerpt');
 
 /**
+ * Register Stylesheet
+**/
+  function register_styles(){
+    wp_register_style(
+      'main-stylesheet', //handle
+      get_template_directory_uri() . '/style.css', //source
+      null, //no dependencies
+      filemtime( get_stylesheet_directory() . '/style.css' ) //version
+    );
+  }
+  add_action('init', 'register_styles');
+
+  function enqueue_styles(){
+    if (!is_admin()):
+      wp_enqueue_style('main-stylesheet'); //style.css
+    endif; //!is_admin
+  }
+  add_action('wp_print_styles', 'enqueue_styles');
+
+/**
     * Die Kommentarausgabe einstellen
 */
 
