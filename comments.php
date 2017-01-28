@@ -3,7 +3,7 @@
 <div id="comments">
 
     <?php if ( have_comments() ) : ?>
-        <h2 class="kommentaranzahl" ><?php printf( _n( '<span class="komplett" ><span class="zahl" >1</span> Kommentar</span>', '<span class="komplett"><span class="zahl" >%1$s</span> Kommentare</span>', get_comments_number(), '' ), number_format_i18n( get_comments_number() )); ?></h2>
+        <h2 class="comment-count" ><?php printf( _n( '<span class="komplett" ><span class="zahl" >1</span> Kommentar</span>', '<span class="komplett"><span class="zahl" >%1$s</span> Kommentare</span>', get_comments_number(), '' ), number_format_i18n( get_comments_number() )); ?></h2>
     <?php endif; // check if there are comments ?>
 
 

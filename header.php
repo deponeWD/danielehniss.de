@@ -28,16 +28,14 @@
     <meta name="description" content="Hallo, ich bin Daniel Ehniss, ein Kaffeeliebhaber und Web Designer in Karlsruhe. Hier findest Du mein privates Blog." >
 <?php } ?>
 
-
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" >
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" >
 
-    <!--[if IE]>
-        <script src="<?php bloginfo('template_url'); ?>/js/html5.js" ></script>
-    <![endif]-->
+<!--[if IE]>
+  <script src="<?php bloginfo('template_url'); ?>/assets/js/html5.js" ></script>
+<![endif]-->
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
@@ -55,5 +53,3 @@
     </p><!-- description -->
 
 </header>
-
-<hr /><!-- Trennlinie -->
