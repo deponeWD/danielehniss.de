@@ -12,7 +12,7 @@
 				<div class="entry">
 					<?php get_template_part( 'display-content' ); ?>
 				</div><!-- entry -->
-				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> &middot; <?php comments_popup_link(__('Schreib&rsquo; einen Kommentar', ''), __('1 Kommentar', ''), __('% Kommentare', ''), '', __('Kommentare geschlossen', '') ); ?></p>
+				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> &middot; <?php comments_popup_link(__('Reagiere darauf', ''), __('1 Reaktion', ''), __('% Reaktionen', ''), '', __('Kommentare geschlossen', '') ); ?></p>
 			</article><!-- post -->
 
 		<?php endwhile; ?>
