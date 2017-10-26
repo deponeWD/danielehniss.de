@@ -189,6 +189,27 @@ add_filter('comment_form_default_fields','my_fields');
 // Install Post Formats
 add_theme_support( 'post-formats', array( 'quote' ) );
 
+// Remove Gallery Inline Styling
+add_filter( 'use_default_gallery_style', '__return_false' );
+
+function auto_featured_image() {
+    global $post;
+
+    if (!has_post_thumbnail($post->ID)) {
+        $attached_image = get_children( "post_parent=$post->ID&amp;post_type=attachment&amp;post_mime_type=image&amp;numberposts=1" );
+
+      if ($attached_image) {
+              foreach ($attached_image as $attachment_id => $attachment) {
+                   set_post_thumbnail($post->ID, $attachment_id);
+              }
+         }
+    }
+}
+// Used for new posts
+add_action('save_post', 'auto_featured_image');
+add_action('draft_to_publish', 'auto_featured_image');
+add_action('new_to_publish', 'auto_featured_image');
+
 // Add automatic-feed-links to the head
 global $wp_version;
 if ( version_compare( $wp_version, '3.0', '>=' ) ) :
