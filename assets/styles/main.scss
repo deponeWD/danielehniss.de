@@ -324,6 +324,12 @@ a img {
   }
 }
 
+.e-content + .gallery {
+  br {
+    display: none;
+  }
+}
+
 .entry img {
   @include vendor-prefix(border-radius, $border-radius);
   display: block;
