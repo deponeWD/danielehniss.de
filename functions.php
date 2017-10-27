@@ -187,7 +187,7 @@ add_filter('comment_form_default_fields','my_fields');
     add_action( 'wp_head', 'insert_twitter_cards', 5 );
 
 // Install Post Formats
-add_theme_support( 'post-formats', array( 'quote' ) );
+add_theme_support( 'post-formats', array( 'quote', 'image' ) );
 
 // Remove Gallery Inline Styling
 add_filter( 'use_default_gallery_style', '__return_false' );
@@ -205,10 +205,8 @@ function auto_featured_image() {
          }
     }
 }
-// Used for new posts
-add_action('save_post', 'auto_featured_image');
-add_action('draft_to_publish', 'auto_featured_image');
-add_action('new_to_publish', 'auto_featured_image');
+// Set featured image when post is published
+add_action('publish_post', 'auto_featured_image');
 
 // Add automatic-feed-links to the head
 global $wp_version;

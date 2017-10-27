@@ -324,6 +324,14 @@ a img {
   }
 }
 
+.entry--image {
+  margin-top: rem(16px);
+
+  @include breakpoint($medium) {
+    margin-top: rem(32px);
+  }
+}
+
 .e-content + .gallery {
   br {
     display: none;

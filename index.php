@@ -7,11 +7,17 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class('h-entry'); ?> id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Link zu %s', ''), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+				<?php if ( has_post_format( 'image' )) { ?>
+					<div class="entry entry--image">
+						<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('large', ['class' => 'size-full']); ?></a>
+					</div>
+				<?php } else { ?>
+					<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-				<div class="entry">
-					<?php get_template_part( 'display-content' ); ?>
-				</div><!-- entry -->
+					<div class="entry">
+						<?php get_template_part( 'display-content' ); ?>
+					</div><!-- entry -->
+				<?php } ?>
 				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> &middot; <?php comments_popup_link(__('Reagiere darauf', ''), __('1 Reaktion', ''), __('% Reaktionen', ''), '', __('Kommentare geschlossen', '') ); ?></p>
 			</article><!-- post -->
 
