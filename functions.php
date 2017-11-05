@@ -189,9 +189,18 @@ add_filter('comment_form_default_fields','my_fields');
 // Install Post Formats
 add_theme_support( 'post-formats', array( 'quote', 'image' ) );
 
+// set link to none on all gallery-shortcodes
+add_filter( 'shortcode_atts_gallery',
+  function( $out ){
+    $out['link'] = 'none';
+    return $out;
+  }
+);
+
 // Remove Gallery Inline Styling
 add_filter( 'use_default_gallery_style', '__return_false' );
 
+// Check if post has a thumbnail, and if not set the first image as thumbnail
 function auto_featured_image() {
     global $post;
 
