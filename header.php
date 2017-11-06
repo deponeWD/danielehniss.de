@@ -28,6 +28,13 @@
     <meta name="description" content="Hallo, ich bin Daniel Ehniss, ein Kaffeeliebhaber und Web Designer in Karlsruhe. Hier findest Du mein privates Blog." >
 <?php } ?>
 
+<link rel="me" href="https://twitter.com/depone">
+<link rel="me" href="https://instagram.com/deponev2">
+<link rel="me" href="https://www.facebook.com/danielehniss">
+
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 
