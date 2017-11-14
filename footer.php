@@ -2,7 +2,7 @@
 <footer role="contentinfo">
     <nav id="mainnav" >
         <ul>
-            <li class="page-item"><a href="http://danielehniss.de/feed/" title="RSS Feed abonnieren?" >Feed</a></li>
+            <li class="page-item"><a href="https://danielehniss.de/feed/" title="RSS Feed abonnieren?" >Feed</a></li>
             <?php wp_list_pages('title_li=&exclude=143'); ?>
         </ul>
     </nav>
