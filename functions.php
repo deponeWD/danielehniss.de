@@ -132,64 +132,57 @@ function my_fields($fields) {
 }
 add_filter('comment_form_default_fields','my_fields');
 
-//Adding the Open Graph in the Language Attributes
-    function add_opengraph_doctype( $output ) {
-        return $output . ' prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"';
-    }
-    add_filter('language_attributes', 'add_opengraph_doctype');
+/**
+* Provide Meta-Tags for shareable content
+*/
+  // Add Open Graph to the language attributes
+  function add_opengraph_doctype( $output ) {
+    return $output . ' prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"';
+  }
+  add_filter('language_attributes', 'add_opengraph_doctype');
 
-    //Lets add Open Graph Meta Info
-
-    function insert_fb_in_head() {
-        global $post;
-        if ( !is_singular()) //if it is not a post or a page
-            return;
-            echo '<meta property="fb:admins" content="613736011"/>';
-            echo '<meta property="og:title" content="' . get_the_title() . '"/>';
-            echo '<meta property="og:type" content="article"/>';
-            echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-            echo '<meta property="og:site_name" content="Daniel Ehniss"/>';
-        if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-            $default_image="http://danielehniss.de/apple-touch-icon.png"; //replace this with a default image on your server or an image in your media library
-            echo '<meta property="og:image" content="' . $default_image . '"/>';
-        }
-        else{
-            $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-            echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
-        }
-        echo "
-    ";
-    }
-    add_action( 'wp_head', 'insert_fb_in_head', 5 );
-
-    // Twitter-Cards
-    function insert_twitter_cards() {
+  // Add Open Graph Meta Info
+  function insert_fb_in_head() {
       global $post;
       if ( !is_singular()) //if it is not a post or a page
         return;
-        echo '<meta name="twitter:url" content="' . get_permalink() . '">';
-        echo '<meta name="twitter:site" content="depone">';
-        echo '<meta name="twitter:domain" content="danielehniss.de">';
-        echo '<meta name="twitter:card" content="summary_large_image">';
-        echo '<meta name="twitter:creator" content="@depone">';
-        echo '<meta name="twitter:title" content="' . get_the_title() . '">';
-        echo '<meta name="twitter:description" content="' . get_the_excerpt() . '">';
-      if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-        $fallback_image="https://danielehniss.de/apple-touch-icon-precomposed.png"; //replace this with a default image on your server or an image in your media library
-        echo '<meta name="twitter:image:src" content="' . $fallback_image . '"/>';
+        echo '<meta property="fb:admins" content="613736011"/>';
+        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+        echo '<meta property="og:type" content="article"/>';
+        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+        echo '<meta property="og:site_name" content="Daniel Ehniss"/>';
+      if(!has_post_thumbnail( $post->ID )) { // if the post does not have a featured image, use a default image
+        $default_image="https://danielehniss.de/apple-touch-icon.png";
+        echo '<meta property="og:image" content="' . $default_image . '"/>';
       }
       else{
-        $post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-        echo '<meta name="twitter:image" content="' . esc_attr( $post_thumbnail[0] ) . '"/>';
+        $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+        echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
       }
       echo "";
-    }
-    add_action( 'wp_head', 'insert_twitter_cards', 5 );
+  }
+  add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+  // Twitter-Cards
+  function insert_twitter_cards() {
+    global $post;
+    if ( !is_singular()) //if it is not a post or a page
+      return;
+      if(!has_post_thumbnail( $post->ID )) {
+        echo '<meta name="twitter:card" content="summary_large_image">';
+      } else {
+        echo '<meta name="twitter:card" content="summary">';
+      }
+      echo '<meta name="twitter:creator" content="@depone">';
+      echo '<meta name="twitter:site" content="@depone">';
+    echo "";
+  }
+  add_action( 'wp_head', 'insert_twitter_cards', 5 );
 
 // Install Post Formats
 add_theme_support( 'post-formats', array( 'quote', 'image' ) );
 
-// set link to none on all gallery-shortcodes
+// Set link to none on all gallery-shortcodes
 add_filter( 'shortcode_atts_gallery',
   function( $out ){
     $out['link'] = 'none';
