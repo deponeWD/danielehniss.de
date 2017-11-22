@@ -168,7 +168,7 @@ add_filter('comment_form_default_fields','my_fields');
     global $post;
     if ( !is_singular()) //if it is not a post or a page
       return;
-      if(!has_post_thumbnail( $post->ID )) {
+      if(has_post_thumbnail( $post->ID )) {
         echo '<meta name="twitter:card" content="summary_large_image">';
       } else {
         echo '<meta name="twitter:card" content="summary">';
