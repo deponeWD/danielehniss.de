@@ -7,7 +7,7 @@
 		"uuidString": "142A1E4F-6D0E-4814-BF15-466A416A3044"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -757,6 +757,7 @@
 	"\/assets\/img\/depone01.jpg": {
 		"ft": 16384,
 		"iS": 6894,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/depone01.jpg",
 		"oF": 0,
@@ -767,6 +768,7 @@
 	"\/assets\/img\/depone02.jpg": {
 		"ft": 16384,
 		"iS": 14728,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/depone02.jpg",
 		"oF": 0,
@@ -1111,7 +1113,8 @@
 	"creationDate": 506082615,
 	"displayValue": "daniel",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "\/assets\/img\/apple-touch-icon.png"
+	"iconImageName": "\/assets\/img\/apple-touch-icon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1119,6 +1122,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1682,6 +1686,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -2909,6 +2917,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
