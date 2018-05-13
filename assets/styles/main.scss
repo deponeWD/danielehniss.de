@@ -177,6 +177,10 @@ h3 {
   }
 }
 
+.entry h3 {
+  text-align: left;
+}
+
 h3.archive {
   clear: both;
   text-align: left;
@@ -314,6 +318,15 @@ a img {
     }
   }
 
+  li {
+    margin: rem(8px) 0;
+    @include vendor-prefix(hyphens,auto);
+
+    @include breakpoint($medium) {
+      margin: rem(12px) 0;
+    }
+  }
+
   ol {
     margin: 0;
     padding-left: rem(36px);
@@ -432,6 +445,15 @@ a img {
 
 .entry ul {
   list-style: circle;
+
+  &.nols {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0;
+    }
+  }
 }
 
 hr {
