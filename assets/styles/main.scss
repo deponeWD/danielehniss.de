@@ -775,6 +775,11 @@ a#cancel-comment-reply-link {
   }
 }
 
+#respond .comment-form-cookies-consent label {
+  text-transform: none;
+  padding-left: 0.35em;
+}
+
 p.comment-form-author span.required,
 p.comment-form-email span.required {
   display: inline;
