@@ -45,7 +45,7 @@
 
 <?php
   // Add Atom-Feed for webmentions and Mastodon
-  echo "<link rel='alternate' type='application/atom+xml' href='". bloginfo('atom_url') ."' />";
+  echo "<link rel='alternate' type='application/atom+xml' href='https://danielehniss.de/feed/atom' />";
 ?>
 
 <!--[if IE]>
