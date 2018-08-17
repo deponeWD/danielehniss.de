@@ -42,9 +42,10 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" >
 
+
 <?php
   // Add Atom-Feed for webmentions and Mastodon
-  bloginfo('atom_url');
+  echo "<link rel='alternate' type='application/atom+xml' href='". bloginfo('atom_url') ."' />";
 ?>
 
 <!--[if IE]>
