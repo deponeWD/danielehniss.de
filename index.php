@@ -9,10 +9,10 @@
 			<article <?php post_class('h-entry'); ?> id="post-<?php the_ID(); ?>">
 				<?php if ( has_post_format( 'image' )) { ?>
 					<div class="entry entry--image">
-						<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('large', ['class' => 'size-full']); ?></a>
+						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail('large', ['class' => 'size-full']); ?></a>
 					</div>
 				<?php } else { ?>
-					<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 					<div class="entry">
 						<?php get_template_part( 'display-content' ); ?>
@@ -24,8 +24,8 @@
 		<?php endwhile; ?>
 		<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 			<nav class="pagination">
-				<div class="alignleft"><?php next_posts_link(__('&Auml;ltere Eintr&auml;ge', '')) ?></div><!-- alignleft -->
-				<div class="alignright"><?php previous_posts_link(__('Neuere Eintr&auml;ge', '')) ?></div><!-- alignright -->
+				<div class="alignleft"><?php next_posts_link(__('&Auml;ltere Eintr&auml;ge', '')); ?></div><!-- alignleft -->
+				<div class="alignright"><?php previous_posts_link(__('Neuere Eintr&auml;ge', '')); ?></div><!-- alignright -->
 			</nav><!-- pagination -->
 		<?php endif; ?>
 
