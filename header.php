@@ -61,7 +61,7 @@
 
 <section id="page">
 
-<header role="banner" class="h-card">
+<header role="banner">
     <h1 itemprop="name" class="p-name">
       <a href="<?php echo get_option('home'); ?>" rel="home" itemprop="url" class="u-url url"><span><?php bloginfo('name'); ?></span></a>
     </h1>
