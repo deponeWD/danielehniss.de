@@ -18,22 +18,7 @@
 						<?php get_template_part( 'display-content' ); ?>
 					</div><!-- entry -->
 				<?php } ?>
-				<div class="entry-meta">
-					<address class="byline">
-						<span class="author p-author vcard hcard h-card" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-							<?php echo get_avatar( get_the_author_meta( 'ID' ), 100, null, null, array( 'class' => array( 'u-photo' ))); ?>
-							<span class="description">Ver&ouml;ffentlicht von</span>
-							<a class="url uid u-url u-uid fn p-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>" title="View all posts by <?php the_author(); ?>" rel="author" itemprop="url">
-								<span itemprop="name"><?php the_author(); ?></span>
-							</a>
-						</span>
-					</address>
-					<span class="conjunction">am</span>
-					<a href="<?php the_permalink(); ?>" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="<?php the_time(__('c', '')); ?>" itemprop="dateModified datePublished"><?php the_time(__('d.m.Y', '')); ?></time></a>
-					<?php printf(__(' in %s', ''), get_the_category_list(', ')); ?>.
-					<?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?>
-					<span class="interact">&middot; <?php comments_popup_link(__('Reagiere darauf', ''), __('1 Reaktion', ''), __('% Reaktionen', ''), '', __('Kommentare geschlossen', '') ); ?></span>
-				</div>
+				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> </p>
 			</article><!-- post -->
 
 		<?php endwhile; ?>

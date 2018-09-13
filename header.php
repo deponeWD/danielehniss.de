@@ -62,9 +62,10 @@
 <section id="page">
 
 <header role="banner">
-    <h1><a href="<?php echo get_option('home'); ?>/"><span><?php bloginfo('name'); ?></span></a></h1>
+    <h1 id="site-title" itemprop="name" class="p-name">
+      <a href="<?php echo get_option('home'); ?>/" rel="home" itemprop="url" class="u-url url"><span><?php bloginfo('name'); ?></span></a>
+    </h1>
     <p class="description">
         <?php bloginfo('description'); ?>
     </p><!-- description -->
-
 </header>
