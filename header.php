@@ -61,11 +61,11 @@
 
 <section id="page">
 
-<header role="banner">
-    <h1 id="site-title" itemprop="name" class="p-name">
-      <a href="<?php echo get_option('home'); ?>/" rel="home" itemprop="url" class="u-url url"><span><?php bloginfo('name'); ?></span></a>
+<header role="banner" class="h-card">
+    <h1 itemprop="name" class="p-name">
+      <a href="<?php echo get_option('home'); ?>" rel="home" itemprop="url" class="u-url url"><span><?php bloginfo('name'); ?></span></a>
     </h1>
     <p class="description">
         <?php bloginfo('description'); ?>
-    </p><!-- description -->
+    </p>
 </header>
