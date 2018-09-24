@@ -1,5 +1,8 @@
 
 <footer role="contentinfo">
+    <address class="vcard h-card not-yet-ready">
+      Hier schreibt <a href="<?php echo get_option('home'); ?>" class="url u-url fn p-name" rel="me">Daniel Ehniss</a>, <span class="role p-role">Vater</span> und <span class="title p-job-title">Webdesigner</span>, der in <span class="adr p-adr"><span class="locality p-locality">Karlsruhe</span>, <span class="country-name p-country-name">Deutschland</span> lebt und arbeitet</span>.
+    </address>
     <nav id="mainnav" >
         <ul>
             <li class="page-item"><a href="https://danielehniss.de/feed/" title="RSS Feed abonnieren?" >Feed</a></li>
