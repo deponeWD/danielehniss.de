@@ -11,9 +11,9 @@
 				<div class="entry">
 					<?php get_template_part( 'display-content' ); ?>
 				</div><!-- entry -->
-				<div class="entry-meta">
+				<div class="entry-meta hcard h-card">
 					<address class="byline">
-						<span class="author p-author vcard hcard h-card" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+						<span class="author p-author vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
 							<?php echo get_avatar( get_the_author_meta( 'ID' ), 100, null, null, array( 'class' => array( 'u-photo' ))); ?>
 							<span class="description">Ver&ouml;ffentlicht von</span>
 							<a class="url uid u-url u-uid fn p-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>" title="View all posts by <?php the_author(); ?>" rel="author" itemprop="url">
