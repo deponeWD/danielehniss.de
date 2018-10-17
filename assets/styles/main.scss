@@ -306,6 +306,7 @@ a img {
 
   @include breakpoint($medium) {
     font-size: rem(28px);
+    line-height: 1.4;
   }
 
   p,
