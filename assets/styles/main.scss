@@ -305,18 +305,8 @@ a img {
   font-size: rem(20px);
 
   @include breakpoint($medium) {
-    font-size: rem(28px);
+    font-size: rem(24px);
     line-height: 1.4;
-  }
-
-  p,
-  li {
-    margin: rem(16px) 0;
-    @include vendor-prefix(hyphens,auto);
-
-    @include breakpoint($medium) {
-      margin: rem(24px) 0;
-    }
   }
 
   li {
@@ -433,10 +423,6 @@ a img {
   font-size: rem(16px);
   font-style: normal;
   line-height: 1;
-
-  @include breakpoint($medium) {
-    font-size: rem(20px);
-  }
 
   & a,
   & a:visited {
@@ -603,10 +589,6 @@ p.postmetadata,
 p.logged-in-as {
   color: $mediumgrey;
   font-size: rem(16px);
-
-  @include breakpoint($medium) {
-    font-size: rem(20px);
-  }
 }
 
 address {
