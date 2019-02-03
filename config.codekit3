@@ -7,7 +7,7 @@
 		"uuidString": "142A1E4F-6D0E-4814-BF15-466A416A3044"
 		}
 	],
-"creatorBuild": "28901",
+"creatorBuild": "28905",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -776,32 +776,22 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/js/embed-videos.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/min/embed-videos-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/html5.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/min/html5-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/assets/js/jquery-1.11.0.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/jquery-1.11.0.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/assets/js/jquery.oembed.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/jquery.oembed.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

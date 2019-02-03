@@ -253,8 +253,8 @@ a.youtube.loaded:after {
   content: "";
 }
 
-.single a.vimeo.loaded,
-a.vimeo.loaded {
+.single div.video.loaded,
+div.video {
   display: block;
   height: 0;
   overflow: hidden;
@@ -265,8 +265,8 @@ a.vimeo.loaded {
   width: 100%;
 }
 
-.single a.vimeo iframe,
-a.vimeo iframe {
+.single div.video iframe,
+div.video iframe {
   border: none;
   height: 100%;
   left: 0;
@@ -274,28 +274,6 @@ a.vimeo iframe {
   top: 0;
   width: 100%;
 }
-
-.single a.youtube.loaded,
-a.youtube.loaded {
-  display: block;
-  height: 0;
-  overflow: hidden;
-  margin-top: 0;
-  padding-bottom: 61%;
-  padding-top: 0;
-  position: relative;
-  width: 100%;
-}
-
-.single a.youtube iframe,
-a.youtube iframe {
-    border: none;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    }
 
 a img {
     border: none;
