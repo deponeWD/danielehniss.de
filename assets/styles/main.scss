@@ -487,7 +487,6 @@ code {
 
 nav.pagination {
   border-top: 1px solid $lightgrey;
-  border-bottom: 1px solid $lightgrey;
   display: block;
   font-size: rem(16px);
   padding: rem(16px) 0;
@@ -575,6 +574,7 @@ address {
 }
 
 #comments {
+  border-top: 1px solid $lightgrey;
   clear: both;
 }
 
@@ -858,7 +858,7 @@ footer {
   clear: both;
   display: block;
   text-align: center;
-  margin: rem(16px) 0 rem(48px);
+  margin: 0 0 rem(48px);
   padding: rem(16px) 0 0;
 
   @include breakpoint($medium) {
