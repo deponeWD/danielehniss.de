@@ -49,6 +49,7 @@ section#page {
 header h1 {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-size: rem(16px);
+  font-weight: normal;
   margin: 0;
   padding: rem(16px) 0 0;
   overflow: hidden;
@@ -166,9 +167,10 @@ h2.section a {
 }
 
 h3 {
+  clear: both;
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-size: rem(32px);
-  clear: both;
+  font-wight: normal;
   margin: rem(16px) 0 rem(8px);
   text-align: center;
 
@@ -204,8 +206,8 @@ h3.comment-reply-title {
 
 h4 {
   font-family: "Source Sans Pro Semibold", sans-serif;
-  font-weight: normal;
   font-size: rem(28px);
+  font-weight: normal;
   clear: both;
   margin: rem(8px) 0 0;
   text-align: center;
