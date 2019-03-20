@@ -213,6 +213,15 @@ function auto_featured_image() {
 // Set featured image when post is published
 add_action('publish_post', 'auto_featured_image');
 
+// Exclude categories from feed
+function exclude_category($query) {
+    if ( $query->is_feed ) {
+        $query->set('cat', '-488');
+    }
+return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');
+
 // Add automatic-feed-links to the head
 global $wp_version;
 if ( version_compare( $wp_version, '3.0', '>=' ) ) :
