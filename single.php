@@ -7,8 +7,8 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class('h-entry'); ?> id="post-<?php the_ID(); ?>">
-				<h2><?php the_title(); ?></h2>
-				<div class="entry">
+				<h2 class="p-name"><?php the_title(); ?></h2>
+				<div class="entry e-content">
 					<?php get_template_part( 'display-content' ); ?>
 				</div><!-- entry -->
 				<div class="entry-meta author p-author">
