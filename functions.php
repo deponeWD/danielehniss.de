@@ -151,12 +151,14 @@ add_filter('comment_form_default_fields','my_fields');
         echo '<meta property="og:type" content="article"/>';
         echo '<meta property="og:url" content="' . get_permalink() . '"/>';
         echo '<meta property="og:site_name" content="Daniel Ehniss"/>';
+      if(has_excerpt( $post->ID )) {
         echo '<meta property="og:description" content="' . strip_tags(get_the_excerpt()) . '"/>';
+      }
       if(!has_post_thumbnail( $post->ID )) { // if the post does not have a featured image, use a default image
         $default_image="https://danielehniss.de/apple-touch-icon.png";
         echo '<meta property="og:image" content="' . $default_image . '"/>';
       }
-      else{
+      else {
         $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
         echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
       }
