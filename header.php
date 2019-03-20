@@ -34,9 +34,6 @@
 <link rel="me" href="https://mastodon.social/@depone">
 <link rel="pgpkey" href="https://danielehniss.de/up/daniel.asc">
 
-<link rel="authorization_endpoint" href="https://indieauth.com/auth">
-<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 
