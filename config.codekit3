@@ -859,17 +859,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/assets/js/html5.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/html5-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/assets/styles/abstracts/_functions.scss": {
 		"aP": 0,
 		"bl": 0,

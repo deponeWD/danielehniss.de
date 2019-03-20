@@ -48,10 +48,6 @@
   echo "<link rel='alternate' type='application/atom+xml' href='https://danielehniss.de/feed/atom' />";
 ?>
 
-<!--[if IE]>
-  <script src="<?php bloginfo('template_url'); ?>/assets/js/html5.js" ></script>
-<![endif]-->
-
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <?php wp_head(); ?>
