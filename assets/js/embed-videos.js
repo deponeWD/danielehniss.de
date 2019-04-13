@@ -59,6 +59,7 @@
       iframe.setAttribute("height", height);
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute("allowfullscreen", "allowfullscreen");
+      iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
       if (videoObj.type == 'youtube') {
           iframe.setAttribute('src', '//www.youtube-nocookie.com/embed/' + videoObj.id + '?autoplay=1');
       } else if (videoObj.type == 'vimeo') {
