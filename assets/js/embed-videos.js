@@ -58,13 +58,13 @@
       iframe.setAttribute("width", width);
       iframe.setAttribute("height", height);
       iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute("allowfullscreen", "allowfullscreen");
-      iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
       if (videoObj.type == 'youtube') {
-          iframe.setAttribute('src', '//www.youtube-nocookie.com/embed/' + videoObj.id + '?autoplay=1');
+          iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + videoObj.id + '?autoplay=1');
+          iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
       } else if (videoObj.type == 'vimeo') {
           iframe.setAttribute('src', '//player.vimeo.com/video/' + videoObj.id + '?autoplay=1');
       }
+      iframe.setAttribute("allowfullscreen", "allowfullscreen");
       return iframe;
   }
 }());
