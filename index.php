@@ -7,18 +7,24 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class('h-entry'); ?> id="post-<?php the_ID(); ?>">
-				<?php if ( has_post_format( 'image' )) { ?>
-					<div class="entry entry--image">
-						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail('large', ['class' => 'size-full']); ?></a>
-					</div>
-				<?php } else { ?>
-					<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
+				<?php if (has_category('instapaper')) { ?>
+					<h2 class="p-name"><span class="visually-hidden">Likes</span> <a class="u-url" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<div class="entry">
 						<?php get_template_part( 'display-content' ); ?>
 					</div><!-- entry -->
-				<?php } ?>
-				<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> &middot; <?php comments_popup_link(__('Reagiere darauf', ''), __('1 Reaktion', ''), __('% Reaktionen', ''), '', __('Kommentare geschlossen', '') ); ?></p>
+				<?php } else { ?>
+					<?php if ( has_post_format( 'image' )) { ?>
+						<div class="entry entry--image">
+							<a class="u-url" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail('large', ['class' => 'size-full']); ?></a>
+						</div>
+					<?php } else { ?>
+						<h2 class="p-name"><a class="u-url" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+						<div class="entry">
+							<?php get_template_part( 'display-content' ); ?>
+						</div><!-- entry -->
+					<?php } ?>
+					<p class="postmetadata">Ver&ouml;ffentlicht am <?php the_time(__('d.m.Y', '')) ?> von <?php the_author() ?> <?php edit_post_link(__('bearbeiten', ''), '(', ') '); ?> &middot; <?php comments_popup_link(__('Reagiere darauf', ''), __('1 Reaktion', ''), __('% Reaktionen', ''), '', __('Kommentare geschlossen', '') ); ?></p>
+				<?php }?>
 			</article><!-- post -->
 
 		<?php endwhile; ?>
