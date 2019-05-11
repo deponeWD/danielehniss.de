@@ -17,6 +17,20 @@
 
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/embed-videos.js" ></script>
-
+<script>
+  <!--
+  // Register our service-worker
+  if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceworker.js', {
+          scope: './'
+      });
+      window.addEventListener('load', function() {
+          if (navigator.serviceWorker.controller) {
+              navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
+          }
+      });
+  }
+  //-->
+</script>
 </body>
 </html>

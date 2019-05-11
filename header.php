@@ -34,6 +34,8 @@
 <link rel="me" href="https://mastodon.social/@depone">
 <link rel="pgpkey" href="https://danielehniss.de/up/daniel.asc">
 
+<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
+
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
 

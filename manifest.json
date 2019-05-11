@@ -1,0 +1,16 @@
+{
+    "lang": "de",
+    "short_name": "DE",
+    "name": "Daniel Ehniss",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "241x241",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "minimal-ui",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa"
+}
