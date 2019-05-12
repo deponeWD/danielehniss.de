@@ -13,7 +13,8 @@ Author URI: https://danielehniss.de
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins';
+  'abstracts/mixins',
+  'vendors/syndication-links';
 
 
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Italic', 'SourceSansPro-It');

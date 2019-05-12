@@ -17,6 +17,25 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/201905-iwc-dus.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 0,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/201905-iwc-dus.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -701,6 +720,17 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/assets/js/serviceworker.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/min/serviceworker-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/styles/abstracts/_functions.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -883,6 +913,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/styles/vendors/_syndication-links.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 5,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/styles/css/_syndication-links.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/comments.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -929,6 +972,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/offline.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/offline.html",
 		"oF": 0
 		},
 	"/page.php": {
