@@ -1,0 +1,49 @@
+header {
+  border-bottom: 1px solid $lightgrey;
+  margin-bottom: rem(32px);
+  padding: rem(32px) 0;
+
+  @include breakpoint($medium) {
+    margin-bottom: rem(48px);
+    padding: rem(48px) 0;
+  }
+
+  img.avatar {
+    &--header {
+      border-radius: 50%;
+      display: block;
+      float: none;
+      height: 100px;
+      margin: 0 auto;
+      width: 100px;
+    }
+  }
+
+  h1 {
+    color: $green;
+    font-family: "Source Sans Pro Semibold", sans-serif;
+    font-size: rem(36px);
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+
+    @include breakpoint($medium) {
+      font-size: rem(44px);
+    }
+
+    & a,
+    & a:visited {
+      @include vendor-prefix(transition, opacity .5s ease-out);
+      display: block;
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  .description {
+    @include visually-hidden;
+    text-align: center;
+  }
+}
