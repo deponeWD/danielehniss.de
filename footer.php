@@ -18,7 +18,6 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/embed-videos.js" ></script>
 <script>
-  <!--
   // Register our service-worker
   if (navigator.serviceWorker) {
       navigator.serviceWorker.register('/serviceworker.js', {
@@ -30,7 +29,6 @@
           }
       });
   }
-  //-->
 </script>
 </body>
 </html>
