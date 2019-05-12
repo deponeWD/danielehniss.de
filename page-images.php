@@ -1,15 +1,18 @@
+<?php /*
+** Template Name: Images
+*/ ?>
 <?php get_header(); ?>
 
 <section id="content" role="main">
+
 	<?php
 		$args = array(
-			'cat' => '-247,-488',
 			'tax_query' => array(
 						array(
 								'taxonomy' => 'post_format',
 								'field' => 'slug',
 								'terms' => array( 'post-format-image' ),
-								'operator' => 'NOT IN'
+								'operator' => 'IN'
 						)
 				),
 			'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1 ), // number of posts per page is set in settings > read

@@ -1014,6 +1014,22 @@
 		"oAP": "/offline.html",
 		"oF": 0
 		},
+	"/page-images.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/page-images.php",
+		"oF": 0
+		},
+	"/page-likes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/page-likes.php",
+		"oF": 0
+		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,

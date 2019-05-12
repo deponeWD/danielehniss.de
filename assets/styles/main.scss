@@ -49,7 +49,7 @@ section#page {
   }
 }
 
-nav#mainnav {
+nav.nav--main {
   display: block;
   font-size: rem(16px);
   left: 0;
@@ -62,14 +62,14 @@ nav#mainnav {
   }
 }
 
-nav#mainnav  ul {
+nav.nav--main ul {
   margin: 0 auto;
   padding: 0;
   text-align: center;
   width: 100%;
 }
 
-nav#mainnav ul li {
+nav.nav--main ul li {
   display: block;
   margin: 0;
   padding: 0;
@@ -80,14 +80,14 @@ nav#mainnav ul li {
   }
 }
 
-nav#mainnav ul li a {
+nav.nav--main ul li a {
   color: $green;
   margin: 0;
   padding: 0 rem(5px);
   text-decoration: none;
 }
 
-nav#mainnav ul li ul.children {
+nav.nav--main ul li ul.children {
   @include visually-hidden;
 }
 
