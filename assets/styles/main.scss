@@ -22,6 +22,7 @@ Author URI: https://danielehniss.de
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Regular', 'SourceSansPro-Regular');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Semibold', 'SourceSansPro-Semibold');
 @include declare-font-face('source-sans-pro', 'Source Sans Pro Semibold Italic', 'SourceSansPro-SemiboldIt');
+@include declare-font-face('source-code-pro', 'Source Code Pro Regular', 'SourceCodePro-Regular');
 
 
 header, nav, section, article, aside, footer {
@@ -34,6 +35,7 @@ body {
   color: $standard;
   font-family: "Source Sans Pro Regular", sans-serif;
   font-size: 100%;
+  font-variant-ligatures: common-ligatures;
   padding: 0;
   margin: 0;
   -webkit-text-size-adjust: none;
@@ -107,6 +109,7 @@ article:last-of-type,
 h2 {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-size: rem(36px);
+  font-variant-ligatures: common-ligatures;
   font-weight: normal;
   text-align: center;
   margin: rem(16px) 0 rem(14px);
@@ -131,6 +134,7 @@ h3 {
   clear: both;
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-size: rem(32px);
+  font-variant-ligatures: common-ligatures;
   font-weight: normal;
   margin: rem(16px) 0 rem(8px);
   text-align: center;
@@ -168,6 +172,7 @@ h3.comment-reply-title {
 h4 {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-size: rem(28px);
+  font-variant-ligatures: common-ligatures;
   font-weight: normal;
   clear: both;
   margin: rem(8px) 0 0;
@@ -345,18 +350,21 @@ a img {
 .entry em {
   font-family: "Source Sans Pro Italic", sans-serif;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
 }
 
 .entry strong {
   font-family: "Source Sans Pro Semibold", sans-serif;
   font-weight: normal;
+  font-variant-ligatures: common-ligatures;
 }
 
 .entry strong em,
 .entry blockquote strong {
   font-family: "Source Sans Pro Semibold Italic", sans-serif;
-  font-weight: normal;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
+  font-weight: normal;
 }
 
 .entry small {
@@ -396,6 +404,7 @@ blockquote {
   border-left: rem(3px) solid $green;
   font-family: "Source Sans Pro Italic", serif;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
   padding: rem(8px) 6%;
   margin: rem(8px) 0;
 
@@ -430,6 +439,7 @@ p.question {
 blockquote p small {
   font-family: "Source Sans Pro Regular", sans-serif;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
 
   &:before {
     display: inline;
@@ -682,6 +692,7 @@ form#webmention-form {
 a.comment-reply-link {
   font-family: 'Source Sans Pro Italic', sans-serif;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
   width: auto;
 }
 
