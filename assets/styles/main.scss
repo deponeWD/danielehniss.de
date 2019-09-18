@@ -82,11 +82,88 @@ nav.nav--main ul li {
   }
 }
 
-nav.nav--main ul li a {
-  color: $green;
-  margin: 0;
-  padding: 0 rem(5px);
-  text-decoration: none;
+nav.nav--main ul li {
+  &.page_item {
+    a {
+      &,
+      &:visited {
+        color: $green;
+        margin: 0;
+        padding: 0 rem(5px);
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:focus {
+        color: darken($green,10%);
+      }
+    }
+  }
+
+  &.current_page_item {
+    a {
+      &,
+      &:visited {
+        color: $standard;
+      }
+
+      &:hover,
+      &:focus {
+        color: darken($green,10%);
+      }
+    }
+  }
+}
+
+.single-format-image nav.nav--main ul li {
+  &.page-item-4398 {
+    a {
+      &,
+      &:visited {
+        color: $standard;
+      }
+
+      &:hover,
+      &:focus {
+        color: darken($green,10%);
+      }
+    }
+  }
+}
+
+.single-post.instapaper nav.nav--main ul li {
+  &.page-item-4400 {
+    a {
+      &,
+      &:visited {
+        color: $standard;
+      }
+
+      &:hover,
+      &:focus {
+        color: darken($green,10%);
+      }
+    }
+  }
+}
+
+.single-format-image,
+.single-post.instapaper {
+  nav.nav--main ul li {
+    &.current_page_item {
+      a {
+        &,
+        &:visited {
+          color: $green;
+        }
+
+        &:hover,
+        &:focus {
+          color: darken($green,10%);
+        }
+      }
+    }
+  }
 }
 
 nav.nav--main ul li ul.children {

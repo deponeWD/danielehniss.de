@@ -76,7 +76,11 @@
     </p>
     <nav id="header-nav" class="nav--main header-nav" role="navigation">
         <ul>
-            <li class="page-item">
+            <?php if (is_front_page() || is_single()) {
+              echo '<li class="page_item current_page_item">';
+            } else {
+              echo '<li class="page_item">';
+            }?>
               <a href="<?php echo esc_url( home_url('/') ); ?>" title="Zur Startseite des Blogs" >Blog</a>
             </li>
             <?php wp_list_pages('title_li=&exclude=592,528,787'); ?>

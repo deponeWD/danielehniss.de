@@ -213,6 +213,20 @@ function auto_featured_image() {
 // Set featured image when post is published
 add_action('publish_post', 'auto_featured_image');
 
+// Add category_nicename as class to body
+function add_category_to_single($classes) {
+  if (is_single() ) {
+    global $post;
+    foreach((get_the_category($post->ID)) as $category) {
+      // add category slug to the $classes array
+      $classes[] = $category->category_nicename;
+    }
+  }
+  // return the $classes array
+  return $classes;
+}
+add_filter('body_class','add_category_to_single');
+
 // Exclude categories from feed
 // function exclude_category($query) {
 //     if ( $query->is_feed ) {
