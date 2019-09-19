@@ -39,6 +39,12 @@ body {
   padding: 0;
   margin: 0;
   -webkit-text-size-adjust: none;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1a1a1a;
+    border-top-color: darken($green, 10%);
+    color: #ccc;
+  }
 }
 
 section#page {
@@ -105,6 +111,10 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
+
+        @media (prefers-color-scheme: dark) {
+          color: #ccc;
+        }
       }
 
       &:hover,
@@ -122,6 +132,10 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
+
+        @media (prefers-color-scheme: dark) {
+          color: #ccc;
+        }
       }
 
       &:hover,
@@ -139,6 +153,10 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
+
+        @media (prefers-color-scheme: dark) {
+          color: #ccc;
+        }
       }
 
       &:hover,
@@ -245,6 +263,10 @@ h3.comment-reply-title {
 
   @include breakpoint($medium) {
     padding: rem(32px) 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom-color: $mediumgrey;
   }
 }
 
@@ -477,6 +499,12 @@ hr {
   background-color: $white;
   border: 1px solid $white;
   display: block;
+
+  @media (prefers-color-scheme: dark) {
+    color: #1a1a1a;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+  }
 }
 
 blockquote {
@@ -489,6 +517,10 @@ blockquote {
 
   &.interview {
     border-left: rem(3px) solid $lightgrey;
+
+    @media (prefers-color-scheme: dark) {
+      border-left-color: $mediumgrey;
+    }
   }
 
   > *:first-of-type {
@@ -506,6 +538,10 @@ p.question {
   border-top: rem(3px) solid $lightgrey;
   margin-top: rem(16px);
   padding-top: rem(12px);
+
+  @media (prefers-color-scheme: dark) {
+    border-top-color: $mediumgrey;
+  }
 }
 
 .disclaimer {
@@ -546,6 +582,10 @@ nav.pagination {
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
     padding: rem(32px) 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-top-color: $mediumgrey;
   }
 }
 
@@ -628,6 +668,10 @@ address {
 #comments {
   border-top: 1px solid $lightgrey;
   clear: both;
+
+  @media (prefers-color-scheme: dark) {
+    border-top-color: $mediumgrey;
+  }
 }
 
 .mention-list,
@@ -663,6 +707,10 @@ ol.commentlist li.odd > article {
   @include vendor-prefix(border-radius, $border-radius);
   background-color: $almostwhite;
   border: none;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $standard;
+  }
 }
 
 ol.commentlist li.bypostauthor > article {
@@ -842,6 +890,12 @@ form.suchformular input[type="text"] {
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
   }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1a1a1a;
+    border-color: $mediumgrey;
+    color: #ccc;
+  }
 }
 
 input[type="text"]:focus,
@@ -856,6 +910,11 @@ form.suchformular input[type="text"]:focus {
   outline: none;
   text-indent: 0;
   z-index: 1;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1a1a1a;
+    color: #ccc;
+  }
 }
 
 input#submit,
@@ -881,6 +940,11 @@ input[type="submit"] {
 
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $green;
+    border-color: $green;
   }
 }
 
@@ -917,6 +981,10 @@ footer {
   @include breakpoint($medium) {
     padding-top: rem(24px);
   }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $mediumgrey;
+  }
 }
 
 footer ul {
@@ -942,6 +1010,10 @@ footer ul.second {
     margin: 0 2% 0 0;
     padding: 0;
     width: 32%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $mediumgrey;
   }
 }
 
@@ -981,6 +1053,10 @@ footer ul.third {
     padding: 0 0 rem(24px);
     text-align: left;
     width: 32%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $mediumgrey;
   }
 }
 
@@ -1026,6 +1102,10 @@ footer p.cc {
     margin-bottom: rem(24px);
     padding-top: rem(24px);
   }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $mediumgrey;
+  }
 }
 
 .visually-hidden,
@@ -1049,6 +1129,10 @@ footer p.cc {
     float: none;
     margin: rem(24px) 0 0;
     padding: rem(24px) 0 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $mediumgrey;
   }
 }
 
