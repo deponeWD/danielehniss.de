@@ -227,6 +227,15 @@ function add_category_to_single($classes) {
 }
 add_filter('body_class','add_category_to_single');
 
+// ADD LOADING-ATTRIBUTE
+function lazy_loading_images($content) {
+  $content = preg_replace('/<img /', '<img loading="lazy" ', $content);
+  return $content;
+}
+// Add filter lazy_loading_images to the_content and post_thumbnail_html
+add_filter('the_content', 'lazy_loading_images');
+add_filter('post_thumbnail_html', 'lazy_loading_images');
+
 // Exclude categories from feed
 // function exclude_category($query) {
 //     if ( $query->is_feed ) {
