@@ -31,19 +31,16 @@ header, nav, section, article, aside, footer {
 
 body {
   background-color: $white;
+  background-color: var(--color-background);
   border-top: 3px solid $green;
   color: $standard;
+  color: var(--color-text-default);
   font-family: "Source Sans Pro Regular", sans-serif;
   font-size: 100%;
   font-variant-ligatures: common-ligatures;
   padding: 0;
   margin: 0;
   -webkit-text-size-adjust: none;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #1a1a1a;
-    color: #ccc;
-  }
 }
 
 section#page {
@@ -110,10 +107,7 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
-
-        @media (prefers-color-scheme: dark) {
-          color: #ccc;
-        }
+        color: var(--color-text-default);
       }
 
       &:hover,
@@ -131,10 +125,7 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
-
-        @media (prefers-color-scheme: dark) {
-          color: #ccc;
-        }
+        color: var(--color-text-default);
       }
 
       &:hover,
@@ -152,10 +143,7 @@ nav.nav--main ul li {
       &,
       &:visited {
         color: $standard;
-
-        @media (prefers-color-scheme: dark) {
-          color: #ccc;
-        }
+        color: var(--color-text-default);
       }
 
       &:hover,
@@ -190,7 +178,10 @@ nav.nav--main ul li ul.children {
 }
 
 article {
-  border-bottom: 1px solid $lightgrey;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $lightgrey;
+  border-bottom-color: var(--color-border);
   margin: 0 0 rem(48px);
   padding: 0 0 rem(48px);
 }
@@ -255,17 +246,16 @@ h3.archive a {
 
 h2.comment-count,
 h3.comment-reply-title {
-  border-bottom: 1px solid $lightgrey;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $lightgrey;
+  border-bottom-color: var(--color-border);
   font-size: rem(32px);
   margin-top: 0;
   padding: rem(16px) 0;
 
   @include breakpoint($medium) {
     padding: rem(32px) 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-bottom-color: $mediumgrey;
   }
 }
 
@@ -495,15 +485,13 @@ a img {
 hr {
   clear: both;
   color: $white;
+  color: var(--color-background);
   background-color: $white;
-  border: 1px solid $white;
+  background-color: var(--color-background);
+  border: 1px solid;
+  border-color: $white;
+  border-color: var(--color-background);
   display: block;
-
-  @media (prefers-color-scheme: dark) {
-    color: #1a1a1a;
-    background-color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-  }
 }
 
 blockquote {
@@ -515,11 +503,9 @@ blockquote {
   margin: rem(8px) 0;
 
   &.interview {
-    border-left: rem(3px) solid $lightgrey;
-
-    @media (prefers-color-scheme: dark) {
-      border-left-color: $mediumgrey;
-    }
+    border-left: rem(3px) solid;
+    border-left-color: $lightgrey;
+    border-left-color: var(--color-border);
   }
 
   > *:first-of-type {
@@ -534,13 +520,11 @@ blockquote {
 }
 
 p.question {
-  border-top: rem(3px) solid $lightgrey;
+  border-top: rem(3px) solid;
+  border-top-color: $lightgrey;
+  border-left-color: var(--color-border);
   margin-top: rem(16px);
   padding-top: rem(12px);
-
-  @media (prefers-color-scheme: dark) {
-    border-top-color: $mediumgrey;
-  }
 }
 
 .disclaimer {
@@ -573,7 +557,9 @@ code {
 }
 
 nav.pagination {
-  border-top: 1px solid $lightgrey;
+  border-top: 1px solid;
+  border-top-color: $lightgrey;
+  border-top-color: var(--color-border);
   display: block;
   font-size: rem(16px);
   padding: rem(16px) 0;
@@ -581,10 +567,6 @@ nav.pagination {
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
     padding: rem(32px) 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-top-color: $mediumgrey;
   }
 }
 
@@ -665,12 +647,10 @@ address {
 }
 
 #comments {
-  border-top: 1px solid $lightgrey;
+  border-top: 1px solid;
+  border-top-color: $lightgrey;
+  border-top-color: var(--color-border);
   clear: both;
-
-  @media (prefers-color-scheme: dark) {
-    border-top-color: $mediumgrey;
-  }
 }
 
 .mention-list,
@@ -705,11 +685,8 @@ ol.commentlist li.even > article {
 ol.commentlist li.odd > article {
   @include vendor-prefix(border-radius, $border-radius);
   background-color: $almostwhite;
+  background-color: var(--color-background-accent);
   border: none;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $standard;
-  }
 }
 
 ol.commentlist li.bypostauthor > article {
@@ -870,8 +847,13 @@ textarea,
 form.suchformular input[type="text"] {
   @include vendor-prefix(border-radius, $border-radius);
   background-color: $white;
-  border: 1px solid $lightgrey;
+  background-color: var(--color-background);
+  border: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
+  box-sizing: border-box;
   color: $standard;
+  color: var(--color-text-default);
   display: block;
   font-family: inherit;
   font-size: rem(16px);
@@ -889,12 +871,6 @@ form.suchformular input[type="text"] {
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
   }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #1a1a1a;
-    border-color: $mediumgrey;
-    color: #ccc;
-  }
 }
 
 input[type="text"]:focus,
@@ -903,25 +879,26 @@ input[type="url"]:focus,
 textarea:focus,
 form.suchformular input[type="text"]:focus {
   background-color: $white;
+  background-color: var(--color-background);
   border: 1px solid $green;
   box-shadow: 0 0 5px $green;
   color: $standard;
+  color: var(--color-text-default);
   outline: none;
   text-indent: 0;
   z-index: 1;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #1a1a1a;
-    color: #ccc;
-  }
 }
 
 input#submit,
 input[type="submit"] {
   @include vendor-prefix(border-radius, $border-radius);
   background-color: $standard;
-  border: 1px solid $standard;
+  background-color: var(--color-text-default);
+  border: 1px solid;
+  border-color: $standard;
+  border-color: var(--color-text-default);
   color: $white;
+  color: var(--color-background);
   font-family: inherit;
   font-size: rem(16px);
   font-weight: 500;
@@ -940,11 +917,6 @@ input[type="submit"] {
   @include breakpoint($medium) {
     font-size: rem(20px); // 2.
   }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $green;
-    border-color: $green;
-  }
 }
 
 input#submit:hover,
@@ -952,7 +924,10 @@ input#submit:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   background-color: $mediumgrey;
-  border: 1px solid $lightgrey;
+  background-color: var(--color-background-hover);
+  border: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
   color: $white;
   cursor: pointer;
   outline: none;
@@ -968,8 +943,10 @@ div.wpcf7-mail-sent-ok {
 }
 
 footer {
-  border-bottom: 1px solid $lightgrey;
-  border-top: 1px solid $lightgrey;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
   color: $mediumgrey;
   clear: both;
   display: block;
@@ -979,10 +956,6 @@ footer {
 
   @include breakpoint($medium) {
     padding-top: rem(24px);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 }
 
@@ -994,7 +967,9 @@ footer ul {
 
 footer ul.first,
 footer ul.second {
-  border-bottom: 1px solid $lightgrey;
+  border-bottom: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
   margin: 0 0 rem(16px) 0;
   padding: 0 0 rem(16px);
 
@@ -1009,10 +984,6 @@ footer ul.second {
     margin: 0 2% 0 0;
     padding: 0;
     width: 32%;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 }
 
@@ -1036,7 +1007,9 @@ footer ul.third {
   padding: 0;
 
   @include breakpoint($small) {
-    border-top: 1px solid $lightgrey;
+    border-top: 1px solid;
+    border-color: $lightgrey;
+    border-color: var(--color-border);
     float: none;
     clear: both;
     margin: 0;
@@ -1052,10 +1025,6 @@ footer ul.third {
     padding: 0 0 rem(24px);
     text-align: left;
     width: 32%;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 }
 
@@ -1092,7 +1061,9 @@ footer ul.third li a {
 }
 
 footer p.cc {
-  border-top: 1px solid $lightgrey;
+  border-top: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
   font-size: rem(16px);
   padding: rem(16px) 0 0;
 
@@ -1100,10 +1071,6 @@ footer p.cc {
     font-size: rem(20px);
     margin-bottom: rem(24px);
     padding-top: rem(24px);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 }
 
@@ -1124,14 +1091,12 @@ footer p.cc {
   }
 
   @include breakpoint($medium) {
-    border-top: 1px solid $lightgrey;
+    border-top: 1px solid;
+    border-color: $lightgrey;
+    border-color: var(--color-border);
     float: none;
     margin: rem(24px) 0 0;
     padding: rem(24px) 0 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 }
 

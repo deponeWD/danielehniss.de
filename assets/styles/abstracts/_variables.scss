@@ -10,13 +10,38 @@
 
 $white: rgb(250,250,250);
 $almostwhite: rgb(229,229,229);
+$verylightgrey: rgb(204,204,204);
 $lightgrey: rgb(127,127,127); // rgb(184,196,204)
 $mediumgrey: rgb(102,102,102); // rgb(161,172,178)
 $standard: rgb(51,51,51);
+$darker: rgb(26,26,26);
 
 $green: rgb(0,153,0);
 $yellow: rgb(255,162,0);
 
+// -----------------------------------------------------------------------------
+// CSS CUSTOM PROPERTIES FOR COLOR MODES
+// -----------------------------------------------------------------------------
+
+:root {
+  --color-background: #{$white};
+  --color-background-accent: #{$almostwhite};
+  --color-background-hover: #{$mediumgrey};
+  --color-text-default: #{$standard};
+  --color-accent: #{$green};
+  --color-border: #{$lightgrey};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #{$darker};
+    --color-background-accent: #{$standard};
+    --color-background-hover: #{$lightgrey};
+    --color-text-default: #{$verylightgrey};
+    --color-accent: #{$green};
+    --color-border: #{$mediumgrey};
+  }
+}
 
 // -----------------------------------------------------------------------------
 // METRICS

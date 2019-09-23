@@ -1,15 +1,13 @@
 header {
-  border-bottom: 1px solid $lightgrey;
+  border-bottom: 1px solid;
+  border-color: $lightgrey;
+  border-color: var(--color-border);
   margin-bottom: rem(32px);
   padding: rem(32px) 0 0;
 
   @include breakpoint($medium) {
     margin-bottom: rem(48px);
     padding: rem(48px) 0 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: $mediumgrey;
   }
 
   img.avatar {
@@ -52,13 +50,11 @@ header {
   }
 
   .header-nav.nav--main {
-    border-top: 1px solid $lightgrey;
+    border-top: 1px solid;
+    border-color: $lightgrey;
+    border-color: var(--color-border);
     margin-top: rem(32px);
     padding: rem(16px) 0;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: $mediumgrey;
-    }
 
     ul {
       li {
