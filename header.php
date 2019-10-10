@@ -83,7 +83,7 @@
             }?>
               <a href="<?php echo esc_url( home_url('/') ); ?>" title="Zur Startseite des Blogs" >Blog</a>
             </li>
-            <?php wp_list_pages('title_li=&exclude=592,528,787'); ?>
+            <?php wp_list_pages('title_li=&exclude=8,592,528,787'); ?>
         </ul>
     </nav>
 </header>
