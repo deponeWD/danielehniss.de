@@ -337,6 +337,12 @@ a img {
     border: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(0.9) contrast(1.1);
+  }
+}
+
 .entry {
   font-size: rem(20px);
 
