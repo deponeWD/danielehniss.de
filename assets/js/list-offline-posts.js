@@ -65,10 +65,11 @@ async function listPages() {
   }
 
   // now display the results
+  let listForCachedPosts = document.querySelector('ol#cached-posts');
   if (results.length) {
     // sort the results, map each result to an <li> tag and put
     // in the `ol#cached-posts` element
-    document.querySelector('ol#cached-posts').innerHTML = results
+    listForCachedPosts.innerHTML = results
       .sort((a, b) => a.published.toJSON() < b.published.toJSON() ? 1 : -1)
       .map(res => {
         // results in:
@@ -80,7 +81,10 @@ async function listPages() {
       })
       .join('\n');
   } else {
-    document.querySelector('ol#cached-posts').innerHTML = "<li>Sorry, es konnten keine Posts aus dem Cache geholt werden.</li>";
+    let errorMessage = document.createElement('p');
+    let errorMessageContent = document.createTextNode('Sorry, es konnten keine Posts aus dem Cache geholt werden.');
+    errorMessage.appendChild(errorMessageContent);
+    listForCachedPosts.parentElement.insertBefore(errorMessage, listForCachedPosts);
   }
 }
 
