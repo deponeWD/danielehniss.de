@@ -1,3 +1,5 @@
+// These two scripts are borrowed from Remy Sharp
+// Following his post about Offline listings: https://remysharp.com/2019/09/05/offline-listings
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 
@@ -20,7 +22,7 @@ function daysAgo(date) {
 
 async function listPages() {
   // since my cache names are versioned, look for the one that
-  // includes "/posts"
+  // includes "pages"
   const cacheNames = await caches.keys();
 
   // results is recently visited blog posts
@@ -45,6 +47,7 @@ async function listPages() {
           const body = await response.text();
 
           // regex for the title of the post
+          // remove blogname that comes after a &middot;
           const title = body.match(/<title>(.*)<\/title>/)[1].split('&middot;')[0];
 
           results.push({
@@ -64,7 +67,7 @@ async function listPages() {
   // now display the results
   if (results.length) {
     // sort the results, map each result to an <li> tag and put
-    // in the `ul#offline-posts` element
+    // in the `ol#cached-posts` element
     document.querySelector('ol#cached-posts').innerHTML = results
       .sort((a, b) => a.published.toJSON() < b.published.toJSON() ? 1 : -1)
       .map(res => {
@@ -76,6 +79,8 @@ async function listPages() {
         return html;
       })
       .join('\n');
+  } else {
+    document.querySelector('ol#cached-posts').innerHTML = "<li>Sorry, es konnten keine Posts aus dem Cache geholt werden.</li>";
   }
 }
 
