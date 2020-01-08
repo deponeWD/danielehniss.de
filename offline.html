@@ -22,7 +22,13 @@
         </nav>
       </header>
       <section id="content" role="main">
-        <h2>Sieht so aus, als wärst Du gerade offline.</h2>
+        <article class="h-entry post type-post hentry">
+          <h2>Ups, keine Verbindung möglich</h2>
+          <div class="entry">
+            <p>Sieht so aus, als wärst Du oder mein Server offline. Eine Verbindung zu meinem Blog ist gerade nicht möglich. Falls Du schon mal hier warst, werden Dir hier ein paar Posts angezeigt die sich in Deinem Cache befinden:</p>
+            <ol id="cached-posts"></ol>
+          </div>
+        </article>
       </section>
       <footer role="contentinfo">
         <address class="vcard h-card not-yet-ready">
@@ -43,5 +49,6 @@
         <p class="cc">Lizenz: <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de" title="Umgangssprachliche Erklärung der Lizenz des Inhalts dieses Blogs" target="_blank">BY-SA Creative Commons</a>, Daniel Ehniss.</p>
       </footer>
     </section>
+    <script src="./assets/js/list-offline-posts.js"></script>
   </body>
 </html>
