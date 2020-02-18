@@ -18,11 +18,12 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/embed-videos.js" ></script>
 <script>
+  const homeURL = "<?php echo get_option('home'); ?>";
+  const swPath = homeURL + '/serviceworker.js';
+  console.log(swPath);
   // Register our service-worker
   if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/serviceworker.js', {
-          scope: './'
-      });
+      navigator.serviceWorker.register(swPath);
       window.addEventListener('load', function() {
           if (navigator.serviceWorker.controller) {
               navigator.serviceWorker.controller.postMessage({'command': 'trimCaches'});
