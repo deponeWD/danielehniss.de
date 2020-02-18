@@ -20,7 +20,6 @@
 <script>
   const homeURL = "<?php echo get_option('home'); ?>";
   const swPath = homeURL + '/serviceworker.js';
-  console.log(swPath);
   // Register our service-worker
   if (navigator.serviceWorker) {
       navigator.serviceWorker.register(swPath);
