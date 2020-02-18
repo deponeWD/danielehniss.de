@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v0.06::';
+const version = 'v0.08::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -23,7 +23,9 @@ function updateStaticCache() {
         .then( cache => {
             // These items won't block the installation of the Service Worker
             cache.addAll([
-              themePath + 'assets/img/apple-touch-icon.png'
+              themePath + 'assets/img/apple-touch-icon.png',
+              themePath + 'assets/fonts/source-sans-pro/WOFF2/OTF/SourceSansPro-Semibold.otf.woff2',
+              themePath + 'assets/fonts/source-sans-pro/WOFF2/OTF/SourceSansPro-Regular.otf.woff2'
             ].concat(offlinePages));
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
