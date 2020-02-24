@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v0.08::';
+const version = 'v0.09::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -31,7 +31,9 @@ function updateStaticCache() {
             return cache.addAll([
 							themePath + 'style.css',
 							themePath + 'assets/js/embed-videos.js',
-							themePath + 'offline.html'
+              themePath + 'assets/js/list-offline-posts.js',
+							themePath + 'offline.html',
+              themePath + 'assets/fonts/source-sans-pro/WOFF2/OTF/SourceSansPro-Regular.otf.woff2'
             ]);
         });
 }
