@@ -67,6 +67,10 @@ async function listPages() {
   // now display the results
   let listForCachedPosts = document.querySelector('ol#cached-posts');
   if (results.length) {
+    let successMessage = document.createElement('p');
+    let successMessageContent = document.createTextNode('Da Du schon hier warst, befinden sich folgende Posts in Deinem Cache, die kannst Du auch offline lesen.');
+    successMessage.appendChild(successMessageContent);
+    listForCachedPosts.parentElement.insertBefore(successMessage, listForCachedPosts);
     // sort the results, map each result to an <li> tag and put
     // in the `ol#cached-posts` element
     listForCachedPosts.innerHTML = results
