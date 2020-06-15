@@ -198,9 +198,11 @@ h2 {
   font-size: rem(36px);
   font-variant-ligatures: common-ligatures;
   font-weight: normal;
-  text-align: center;
+  hyphens: auto;
   margin: rem(16px) 0 rem(14px);
+  overflow-wrap: break-word;
   padding: 0;
+  text-align: center;
 
   @include breakpoint($medium) {
     font-size: rem(44px);
@@ -223,7 +225,9 @@ h3 {
   font-size: rem(32px);
   font-variant-ligatures: common-ligatures;
   font-weight: normal;
+  hyphens: auto;
   margin: rem(16px) 0 rem(8px);
+  overflow-wrap: break-word;
   text-align: center;
 
   @include breakpoint($medium) {
