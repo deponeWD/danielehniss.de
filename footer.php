@@ -1,8 +1,9 @@
 
 <footer role="contentinfo">
     <address class="vcard h-card not-yet-ready">
-      <p>Hier schreibt <a href="<?php echo get_option('home'); ?>" class="url u-url fn p-name" rel="me">Daniel Ehniss</a>, <span class="role p-role">Vater</span> und <span class="title p-job-title">Webdesigner</span>, der in <span class="adr p-adr"><span class="locality p-locality">Karlsruhe</span>, <span class="country-name p-country-name">Deutschland</span> lebt und arbeitet</span>.</p>
-      <p>Neben diesem Blog findest Du mich auch auf <a href="https://twitter.com/depone" rel="me">Twitter</a>, <a href="https://mastodon.social/@depone" rel="me">Mastodon</a>, <a href="https://instagram.com/deponev2" rel="me">Instagram</a> und <a href="https://facebook.com/danielehniss" rel="me">Facebook</a>.</p>
+      <a href="<?php echo esc_url( home_url('/') ); ?>" itemprop="url" class="u-url url uid"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="u-photo avatar--header"></a>
+      <p class="p-note">Hier schreibt <a href="<?php echo get_option('home'); ?>" class="fn p-name" rel="me">Daniel Ehniss</a>, <span class="role p-role">Vater</span> und <span class="title p-job-title">Webdesigner</span>, der in <span class="adr p-adr"><span class="locality p-locality">Karlsruhe</span>, <span class="country-name p-country-name">Deutschland</span> lebt und arbeitet</span>.</p>
+      <p>Neben diesem Blog findest Du mich auch auf <a href="https://twitter.com/depone" rel="me">Twitter</a> und <a href="https://mastodon.social/@depone" rel="me">Mastodon</a>.</p>
     </address>
     <nav id="footer-nav" class="nav--main">
         <ul>

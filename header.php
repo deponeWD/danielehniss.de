@@ -57,13 +57,13 @@
 
 <section id="page">
 
-<header role="banner" class="vcard h-card hcard">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="u-photo avatar--header">
-    <h1 itemprop="name" class="p-name">
+<header role="banner">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="avatar--header">
+    <h1 itemprop="name">
       <?php if (!is_front_page()) {
           echo '<a href="';
             echo esc_url( home_url('/') );
-          echo '" rel="home" itemprop="url" class="u-url url uid">';
+          echo '">';
         }
 
         bloginfo('name');
