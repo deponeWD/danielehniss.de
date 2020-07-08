@@ -42,6 +42,8 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" >
 
+<link rel="feed" type="text/html" title="Bilder von Daniel Ehniss" href="<?php echo esc_url( home_url('/bilder') ); ?>">
+<link rel="feed" type="text/html" title="Lesezeichen von Daniel Ehniss" href="<?php echo esc_url( home_url('/lesezeichen') ); ?>">
 
 <?php
   // Add Atom-Feed for webmentions and Mastodon
