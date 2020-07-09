@@ -60,7 +60,7 @@
 <section id="page">
 
 <header role="banner">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="avatar--header">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="avatar--header" alt="Portrait von Daniel Ehniss">
     <h1 itemprop="name">
       <?php if (!is_front_page()) {
           echo '<a href="';
