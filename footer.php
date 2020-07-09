@@ -12,7 +12,7 @@
         </ul>
     </nav>
     <div class="suchfeld"><?php get_search_form(); ?></div>
-    <p class="cc">Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" title="Umgangssprachliche Erkl&auml;rung der Lizenz des Inhalts dieses Blogs" target="_blank" >BY-SA Creative Commons</a>, Daniel Ehniss.</p>
+    <p class="cc">Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" title="Umgangssprachliche Erkl&auml;rung der Lizenz des Inhalts dieses Blogs" target="_blank" rel="noreferrer">BY-SA Creative Commons</a>, Daniel Ehniss.</p>
 </footer><!-- footer -->
 </section><!-- page -->
 
