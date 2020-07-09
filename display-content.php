@@ -19,4 +19,13 @@
   </blockquote>
 <?php } else {
   the_content(__('weiterlesen &rarr;', ''));
+
+  $syndication_links = get_post_meta( get_the_ID(), 'Syndication Link' );
+  if ($syndication_links) {
+    echo '<ul class="visually-hidden nols posse">';
+    foreach ($syndication_links as $syndication_link) {
+      echo '<li class="posse-item"><a class="u-syndication syn-link" rel="syndication" href="'. esc_url($syndication_link) .'">'. esc_url($syndication_link) .'</a></li>';
+    }
+    echo '</ul>';
+  }
 } ?>
