@@ -22,10 +22,20 @@
 				<h3 class="archive" ><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Link zu %s', ''), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3>
 
 				<div class="entry">
-					<?php the_excerpt(); ?>
+					<?php
+						the_excerpt();
+						$syndication_links = get_post_meta( get_the_ID(), 'Syndication Link' );
+					  if ($syndication_links) {
+					    echo '<ul class="visually-hidden nols posse">';
+					    foreach ($syndication_links as $syndication_link) {
+					      echo '<li class="posse-item"><a class="u-syndication syn-link" rel="syndication" href="'. esc_url($syndication_link) .'">'. esc_url($syndication_link) .'</a></li>';
+					    }
+					    echo '</ul>';
+					  }
+					?>
 					<a class="weiterlesen" href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Link zu %s', ''), the_title_attribute('echo=0')); ?>">&rsaquo; Artikel lesen</a>
 				</div><!-- entry -->
-				
+
 			</article><!-- post -->
 
 		<?php endwhile; ?>
