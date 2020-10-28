@@ -22,7 +22,7 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article <?php post_class('h-entry'); ?> id="post-<?php the_ID(); ?>">
-				<?php if (has_category('instapaper')) { ?>
+				<?php if (has_category('lesezeichen')) { ?>
 					<h2 class="p-name"><span class="visually-hidden">Likes</span> <a class="u-url" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<div class="entry">
 						<?php get_template_part( 'display-content' ); ?>
