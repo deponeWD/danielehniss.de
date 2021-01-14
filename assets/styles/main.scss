@@ -647,7 +647,8 @@ a.weiterlesen {
 p.postmetadata,
 .entry-meta,
 p.logged-in-as {
-  color: $mediumgrey;
+  color: $standard;
+  color: var(--color-text-default);
   font-size: rem(16px);
 }
 
@@ -701,7 +702,7 @@ ol.commentlist li.odd > article {
 
 ol.commentlist li.bypostauthor > article {
   @include vendor-prefix(border-radius, $border-radius);
-  background-color: tint($green, 90);
+  background-color: rgba($green, 0.2);
   border: 0;
 }
 
@@ -957,7 +958,8 @@ footer {
   border-top: 1px solid;
   border-color: $lightgrey;
   border-color: var(--color-border);
-  color: $mediumgrey;
+  color: $standard;
+  color: var(--color-text-default);
   clear: both;
   display: block;
   text-align: center;
