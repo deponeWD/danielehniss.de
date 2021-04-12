@@ -29,11 +29,11 @@ function updateStaticCache() {
             ].concat(offlinePages));
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
-							themePath + 'style.css',
-							themePath + 'assets/js/embed-videos.js',
-              themePath + 'assets/js/list-offline-posts.js',
-							themePath + 'offline.html',
-              themePath + 'assets/fonts/source-sans-pro/WOFF2/OTF/SourceSansPro-Regular.otf.woff2'
+                themePath + 'style.css',
+                themePath + 'assets/js/embed-videos.js',
+                themePath + 'assets/js/list-offline-posts.js',
+                themePath + 'offline.html',
+                themePath + 'assets/fonts/source-sans-pro/WOFF2/OTF/SourceSansPro-Regular.otf.woff2'
             ]);
         });
 }
