@@ -14,7 +14,7 @@
 				<div class="entry-meta">
 					<address class="byline">
 						<span class="author p-author h-card hcard vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone.jpg" class="avatar avatar-100 photo u-photo">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/depone-2021.jpg" class="avatar avatar-100 photo u-photo">
 							<span class="description">Ver&ouml;ffentlicht von</span>
 							<a class="url uid u-url u-uid fn p-name" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>" title="View all posts by <?php the_author(); ?>" rel="author" itemprop="url">
 								<span itemprop="name"><?php the_author(); ?></span>
