@@ -32,7 +32,7 @@
 <link rel="me" href="https://twitter.com/depone">
 <link rel="me" href="https://instagram.com/deponev2">
 <link rel="me" href="https://www.facebook.com/danielehniss">
-<link rel="me" href="https://mastodon.social/@depone">
+<link rel="me" href="https://chaos.social/@depone">
 <link rel="pgpkey" href="https://danielehniss.de/up/daniel.asc">
 
 <meta name="theme-color" content="#009900"/>
